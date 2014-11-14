@@ -1,10 +1,10 @@
 #!/usr/local/bin/python
 # encoding: utf-8
 """
-templates_downloads.py
+templates_download.py
 ======================
 :Summary:
-    The HTML template module for the `templates_downloads.py` resource
+    The HTML template module for the `templates_download.py` resource
 
 :Author:
     David Young
@@ -19,7 +19,7 @@ templates_downloads.py
     - If you have any questions requiring this script/module please email me: d.r.young@qub.ac.uk
 
 :Tasks:
-    @review: when complete review and cleanup this `templates_downloads.py` module
+    @review: when complete review and cleanup this `templates_download.py` module
 """
 ################# GLOBAL IMPORTS ####################
 import sys
@@ -30,10 +30,10 @@ from pyramid.response import FileResponse
 from pyramid.path import AssetResolver
 
 
-class templates_downloads():
+class templates_download():
 
     """
-    The worker class for the templates_downloads module
+    The worker class for the templates_download module
 
     **Key Arguments:**
         - ``log`` -- logger
@@ -57,7 +57,7 @@ class templates_downloads():
         }
         self.qs = dict(self.request.params)
 
-        log.debug("instansiating a new 'templates_downloads' object")
+        log.debug("instansiating a new 'templates_download' object")
 
         # Initial Actions
         self._set_default_parameters()
@@ -70,7 +70,7 @@ class templates_downloads():
 
     # Method Attributes
     def get(self):
-        """get the templates_downloads object
+        """get the templates_download object
 
         **Return:**
             - ``responseContent`` -- the response

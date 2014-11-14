@@ -1,1 +1,1 @@
-from templates_downloads import templates_downloads
+from templates_download import templates_download
