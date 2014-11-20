@@ -19,7 +19,6 @@ templates_download.py
     - If you have any questions requiring this script/module please email me: d.r.young@qub.ac.uk
 
 :Tasks:
-    @review: when complete review and cleanup this `templates_download.py` module
 """
 ################# GLOBAL IMPORTS ####################
 import sys
