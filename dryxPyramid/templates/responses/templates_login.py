@@ -19,14 +19,11 @@ templates_login.py
     - If you have any questions requiring this script/module please email me: d.r.young@qub.ac.uk
 
 :Tasks:
-    @review: when complete review and cleanup this `templates_login.py` module
 """
 ################# GLOBAL IMPORTS ####################
 import sys
 import os
 import khufu
-# from ...models.login import models_login_get
-# from ...models.login.element import models_login_element_get
 
 
 class templates_login():
@@ -41,15 +38,12 @@ class templates_login():
         - ``jsFileName`` -- the filename of the main js file
         - ``pageTitle`` -- pageTitle
         - ``icon`` -- webapp icon
+        - ``came_from`` -- the url this login page was triggered from
+        - ``message`` -- message to display as notification
 
     **Todo**
-        - @review: when complete, clean templates_login class
-        - @review: when complete add logging
-        - @review: when complete, decide whether to abstract class to another module
     """
     # Initialisation
-    # 1. @flagged: what are the unique attrributes for each object? Add them
-    # to __init__
 
     def __init__(
         self,
@@ -58,7 +52,9 @@ class templates_login():
         mainCssFileName="main.css",
         jsFileName="main-ck.js",
         pageTitle="Login",
-        iconPath=""
+        iconPath="",
+        came_from="/",
+        message=""
     ):
         self.log = log
         self.request = request
@@ -66,16 +62,12 @@ class templates_login():
         self.jsFileName = jsFileName
         self.pageTitle = pageTitle
         self.iconPath = iconPath
+        self.came_from = came_from
+        self.message = message
 
         # xt-self-arg-tmpx
 
         log.debug("instansiating a new 'templates_login' object")
-
-        # 2. @flagged: what are the default attrributes each object could have? Add them to variable attribute set here
-        # Variable Data Atrributes
-
-        # 3. @flagged: what variable attrributes need overriden in any baseclass(es) used
-        # Override Variable Data Atrributes
 
         # Initial Actions
 
@@ -85,35 +77,29 @@ class templates_login():
         del self
         return None
 
-    # 4. @flagged: what actions does each object have to be able to perform? Add them here
     # Method Attributes
     def get(self):
         """get the templates_login object
 
         **Return:**
-            - ``responseContent`` -- the response
+            - ``loginPage`` -- the login page
 
         **Todo**
-            - @review: when complete, clean get method
-            - @review: when complete add logging
         """
         self.log.info('starting the ``get`` method')
-
-        templates_login = None
 
         loginPage = khufu.scaffolding.login_page(
             log=self.log,
             mainCssFileName=self.mainCssFileName,
             jsFileName=self.jsFileName,
             pageTitle=self.pageTitle,
-            iconPath=self.iconPath
+            iconPath=self.iconPath,
+            came_from=self.came_from,
+            message=self.message,
         )
         loginPage = loginPage.get()
 
         self.log.info('completed the ``get`` method')
         return loginPage
-    # xt-class-method
 
-    # 5. @flagged: what actions of the base class(es) need ammending? ammend them here
-    # Override Method Attributes
-    # method-override-tmpx
+    # xt-class-method

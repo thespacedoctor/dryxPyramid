@@ -1,4 +1,2 @@
 from templates_download import templates_download
-
 from templates_login import templates_login
-from templates_logout import templates_logout

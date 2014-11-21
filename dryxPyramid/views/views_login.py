@@ -5,8 +5,7 @@ from pyramid.response import Response
 from pyramid.view import view_config, view_defaults, forbidden_view_config
 from pyramid.security import remember, forget
 from dryxPyramid.security import USERS
-from ..templates.responses import templates_login
-# from ..models.login import models_login_post, models_login_put
+from dryxPyramid.templates.responses import templates_login
 
 # RESOURCE CONTEXT
 
@@ -19,49 +18,47 @@ class login_view(object):
         self.log = logging.getLogger(__name__)
         self.log.debug("instantiating a new 'login'' view")
 
-    @view_config(request_method='DELETE')
-    @view_config(request_param="method=delete")
-    def delete(self):
-        return exc.exception_response(405, body_template="The DELETE method is not allowed on the 'login' resource")
+    @view_config(route_name='login')
+    @forbidden_view_config()
+    def login(self):
+        # Some Varibales
+        request = self.request
+        login_url = request.route_url('login')
+        referrer = request.url
+        message = ''
+        login = ''
+        password = ''
 
-    @view_config(request_method='PUT')
-    @view_config(request_param="method=put")
-    def put(self):
-        login = models_login_put(
-            log=self.log,
-            request=self.request
-        )
-        responseContent = login.put()
-        if "redirectURL" in self.request.params:
-            url = self.request.params["redirectURL"]
-            return HTTPFound(location=url)
-        else:
-            return Response(responseContent)
+        # never use the login form itself as came_from
+        if login_url in referrer:
+            referrer = '/'
 
-    @view_config(request_method='POST')
-    @view_config(request_param="method=post")
-    def post(self):
-        login = models_login_post(
-            log=self.log,
-            request=self.request
-        )
-        responseContent = login.post()
-        if "redirectURL" in self.request.params:
-            url = self.request.params["redirectURL"]
-            return HTTPFound(location=url)
-        else:
-            return Response(responseContent)
+        came_from = request.params.get('came_from', referrer)
 
-    @view_config(request_method='GET')
-    @view_config(request_param="method=get")
-    def get(self):
-        login = templates_login(
+        # test post method parameter to see if user can login
+        if ('method' in request.params and request.params["method"] == "post") or request.method == "POST":
+            login = request.params['login']
+            password = request.params['password']
+            if login not in USERS:
+                message = 'incorrect username or password'
+            else:
+                if USERS.get(login) == password:
+                    headers = remember(request, login)
+                    return HTTPFound(location=came_from,
+                                     headers=headers)
+                else:
+                    message = 'incorrect username or password'
+
+        # If wrong details added, or GET method used, return login page
+        loginPage = templates_login(
             log=self.log,
-            request=self.request,
-            mainCssFileName="main_marshall.css",
-            jsFileName="main-ck.js",
-            pageTitle="Marshall Login",
-            iconPath="/static/images/pessto_icon.png"
+            request=request,
+            mainCssFileName=self.request.registry.settings["main css filename"],
+            jsFileName=self.request.registry.settings["main js filename"],
+            pageTitle="Login",
+            iconPath=self.request.registry.settings["path to webapp icon"],
+            message=message,
+            came_from=came_from
         )
-        responseContent = login.get()
+        responseContent = loginPage.get()
         return Response(responseContent)
