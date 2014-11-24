@@ -6,12 +6,11 @@ from pyramid.httpexceptions import HTTPFound
 from pyramid.response import Response
 from pyramid.view import view_config, view_defaults, forbidden_view_config
 from pyramid.security import remember, forget
-from dryxPyramid.security import USERS
 
 # RESOURCE CONTEXT
 
 
-@view_config(route_name='logout')
+@view_config(route_name='logout',  permission="view_everyone")
 def logout(request):
     referrer = request.url
     logout_url = request.route_url('logout')
