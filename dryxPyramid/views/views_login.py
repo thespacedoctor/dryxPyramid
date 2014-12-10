@@ -45,9 +45,9 @@ class login_view(object):
         password = ''
 
         # never use the login form itself as came_from
-        if login_url in referrer:
-            referrer = '/'
-
+        if login_url in referrer or "/" == referrer:
+            href = request.route_path('index')
+            referrer = href
         came_from = request.params.get('came_from', referrer)
 
         # test post method parameter to see if user can login
