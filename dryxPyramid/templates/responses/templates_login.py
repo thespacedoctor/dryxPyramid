@@ -34,8 +34,8 @@ class templates_login():
     **Key Arguments:**
         - ``log`` -- logger
         - ``request`` -- the pyramid request
-        - ``mainCssFileName`` -- the filename of the main css file
-        - ``jsFileName`` -- the filename of the main js file
+        - ``mainCssFilePath`` -- the filename of the main css file
+        - ``jsFilePath`` -- the filename of the main js file
         - ``pageTitle`` -- pageTitle
         - ``icon`` -- webapp icon
         - ``came_from`` -- the url this login page was triggered from
@@ -50,7 +50,7 @@ class templates_login():
         log,
         request,
         mainCssFilePath="main.css",
-        jsFileName="main-ck.js",
+        jsFilePath="main-ck.js",
         pageTitle="Login",
         iconPath="",
         came_from="/",
@@ -59,7 +59,7 @@ class templates_login():
         self.log = log
         self.request = request
         self.mainCssFilePath = mainCssFilePath
-        self.jsFileName = jsFileName
+        self.jsFilePath = jsFilePath
         self.pageTitle = pageTitle
         self.iconPath = iconPath
         self.came_from = came_from
@@ -91,7 +91,7 @@ class templates_login():
         loginPage = khufu.scaffolding.login_page(
             log=self.log,
             mainCssFilePath=self.mainCssFilePath,
-            jsFileName=self.jsFileName,
+            jsFilePath=self.jsFilePath,
             pageTitle=self.pageTitle,
             iconPath=self.iconPath,
             came_from=self.came_from,
