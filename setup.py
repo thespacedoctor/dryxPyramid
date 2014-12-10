@@ -23,7 +23,8 @@ setup(name='dryxPyramid',
       packages=['dryxPyramid'],
       install_requires=[
           'pyramid',
-          'sqlalchemy'
+          'sqlalchemy',
+          'passlib'
       ],
       test_suite='nose.collector',
       tests_require=['nose', 'nose-cover3'],

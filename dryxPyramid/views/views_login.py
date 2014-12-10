@@ -69,8 +69,8 @@ class login_view(object):
         loginPage = templates_login(
             log=self.log,
             request=request,
-            mainCssFileName=self.request.registry.settings["main css filename"],
-            jsFileName=self.request.registry.settings["main js filename"],
+            mainCssFilePath=self.request.registry.settings["main css filepath"],
+            jsFilePath=self.request.registry.settings["main js filepath"],
             pageTitle="Login",
             iconPath=self.request.registry.settings["path to webapp icon"],
             message=message,
