@@ -49,7 +49,7 @@ class templates_login():
         self,
         log,
         request,
-        mainCssFileName="main.css",
+        mainCssFilePath="main.css",
         jsFileName="main-ck.js",
         pageTitle="Login",
         iconPath="",
@@ -58,7 +58,7 @@ class templates_login():
     ):
         self.log = log
         self.request = request
-        self.mainCssFileName = mainCssFileName
+        self.mainCssFilePath = mainCssFilePath
         self.jsFileName = jsFileName
         self.pageTitle = pageTitle
         self.iconPath = iconPath
@@ -90,7 +90,7 @@ class templates_login():
 
         loginPage = khufu.scaffolding.login_page(
             log=self.log,
-            mainCssFileName=self.mainCssFileName,
+            mainCssFilePath=self.mainCssFilePath,
             jsFileName=self.jsFileName,
             pageTitle=self.pageTitle,
             iconPath=self.iconPath,
