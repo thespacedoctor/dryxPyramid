@@ -28,5 +28,4 @@ def groupfinder(userid, request):
     USERS, GROUPS = get_users_and_groups(request)
 
     if userid in USERS:
-        print str(GROUPS.get(userid, []))
         return GROUPS.get(userid, [])
