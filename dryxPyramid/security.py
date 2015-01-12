@@ -16,8 +16,6 @@ def get_users_and_groups(request):
         name = (row["firstname"] + "." + row["secondname"]).lower()
         USERS[name] = row["password"]
         GROUPS[name] = ["group:" + row["permissions"]]
-        if name == "david.young":
-            print "david.young: " + str(GROUPS[name])
 
     return USERS, GROUPS
 
