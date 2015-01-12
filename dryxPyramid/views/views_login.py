@@ -51,7 +51,7 @@ class login_view(object):
         came_from = request.params.get('came_from', referrer)
 
         # test post method parameter to see if user can login
-        if ('method' in request.params and request.params["method"] == "post") or request.method == "POST":
+        if 'login' in request.params and (('method' in request.params and request.params["method"] == "post") or request.method == "POST"):
             login = request.params['login']
             login = login.replace("@pessto.org", "")
             password = request.params['password']
