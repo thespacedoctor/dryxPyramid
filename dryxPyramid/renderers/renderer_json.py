@@ -17,20 +17,22 @@ class renderer_json(JSON):
     def __call__(self, info, system):
         _render = JSON.__call__(self, info)
 
+        if isinstance(info, list):
+            info = {"data": info}
+
         # if table if empty
         if len(info):
-            tableColumnNames = info[0].keys()
+            tableColumnNames = info.keys()
 
         self.add_adapter(datetime.datetime, self.datetime_adapter)
         self.add_adapter(decimal.Decimal, self.decimal_adapter)
 
-        for row in info:
-            for c in tableColumnNames:
-                if isinstance(row[c], float) or isinstance(row[c], long) or isinstance(row[c], Decimal):
-                    row[c] = float("%0.4f" % row[c])
-                elif isinstance(row[c], datetime.datetime):
-                    thisDate = str(row[c])[:10]
-                    row[c] = "%(thisDate)s" % locals()
+        for c in tableColumnNames:
+            if isinstance(info[c], float) or isinstance(info[c], long) or isinstance(info[c], Decimal):
+                info[c] = float("%0.4f" % info[c])
+            elif isinstance(info[c], datetime.datetime):
+                thisDate = str(info[c])[:10]
+                info[c] = "%(thisDate)s" % locals()
 
         # setup the file if "download" is true
         request = system.get('request')
