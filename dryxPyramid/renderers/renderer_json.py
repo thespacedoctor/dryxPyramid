@@ -8,7 +8,7 @@ from pyramid.renderers import JSON
 class renderer_json(JSON):
 
     """
-    The json renderer - can return content to browser or a file to download
+    *The json renderer - can return content to browser or a file to download*
     """
 
     def __init__(self, info):

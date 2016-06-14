@@ -1,10 +1,7 @@
 #!/usr/local/bin/python
 # encoding: utf-8
 """
-templates_login.py
-==================
-:Summary:
-    The HTML template module for the `templates_login.py` resource
+*The HTML template module for the `templates_login.py` resource*
 
 :Author:
     David Young
@@ -12,13 +9,8 @@ templates_login.py
 :Date Created:
     November 20, 2014
 
-:dryx syntax:
-    - ``_someObject`` = a 'private' object that should only be changed for debugging
-
-:Notes:
-    - If you have any questions requiring this script/module please email me: d.r.young@qub.ac.uk
-
-:Tasks:
+.. todo::
+    
 """
 ################# GLOBAL IMPORTS ####################
 import sys
@@ -29,7 +21,7 @@ import khufu
 class templates_login():
 
     """
-    The worker class for the templates_login module
+    *The worker class for the templates_login module*
 
     **Key Arguments:**
         - ``log`` -- logger
@@ -41,7 +33,8 @@ class templates_login():
         - ``came_from`` -- the url this login page was triggered from
         - ``message`` -- message to display as notification
 
-    **Todo**
+    .. todo::
+
     """
     # Initialisation
 
@@ -79,12 +72,14 @@ class templates_login():
 
     # Method Attributes
     def get(self):
-        """get the templates_login object
+        """
+        *get the templates_login object*
 
         **Return:**
             - ``loginPage`` -- the login page
 
-        **Todo**
+        .. todo::
+
         """
         self.log.info('starting the ``get`` method')
 

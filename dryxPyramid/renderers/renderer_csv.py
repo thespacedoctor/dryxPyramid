@@ -8,7 +8,7 @@ from datetime import datetime
 class renderer_csv(object):
 
     """
-    The CSV renderer - can return plain text in browser or a file to download
+    *The CSV renderer - can return plain text in browser or a file to download*
     """
 
     def __init__(self, info):

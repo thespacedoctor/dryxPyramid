@@ -8,7 +8,7 @@ from datetime import datetime
 class renderer_plain_table(object):
 
     """
-    The plain_table renderer - can return content to browser or a file to download
+    *The plain_table renderer - can return content to browser or a file to download*
     """
 
     def __init__(self, info):

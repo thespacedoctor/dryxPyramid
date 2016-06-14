@@ -1,10 +1,7 @@
 #!/usr/local/bin/python
 # encoding: utf-8
 """
-templates_download.py
-======================
-:Summary:
-    The HTML template module for the `templates_download.py` resource
+*The HTML template module for the `templates_download.py` resource*
 
 :Author:
     David Young
@@ -12,13 +9,8 @@ templates_download.py
 :Date Created:
     November 13, 2014
 
-:dryx syntax:
-    - ``_someObject`` = a 'private' object that should only be changed for debugging
-
-:Notes:
-    - If you have any questions requiring this script/module please email me: d.r.young@qub.ac.uk
-
-:Tasks:
+.. todo::
+    
 """
 ################# GLOBAL IMPORTS ####################
 import sys
@@ -32,14 +24,15 @@ from pyramid.path import AssetResolver
 class templates_download():
 
     """
-    The worker class for the templates_download module
+    *The worker class for the templates_download module*
 
     **Key Arguments:**
         - ``log`` -- logger
         - ``request`` -- the pyramid request
         - ``elementId`` -- the specific element requested (or False)
 
-    **Todo**
+    .. todo::
+
     """
 
     def __init__(
@@ -69,12 +62,14 @@ class templates_download():
 
     # Method Attributes
     def get(self):
-        """get the templates_download object
+        """
+        *get the templates_download object*
 
         **Return:**
             - ``responseContent`` -- the response
 
-        **Todo**
+        .. todo::
+
         """
         self.log.info('starting the ``get`` method')
 
@@ -107,7 +102,8 @@ class templates_download():
 
     def _set_default_parameters(
             self):
-        """ set default parameters
+        """
+        *set default parameters*
 
         **Key Arguments:**
             # -
@@ -115,7 +111,8 @@ class templates_download():
         **Return:**
             - None
 
-        **Todo**
+        .. todo::
+
         """
         self.log.info('starting the ``_set_default_parameters`` method')
 

@@ -1,6 +1,6 @@
 def get_users_and_groups(request):
     """
-    Get the users and groups from the database
+    *Get the users and groups from the database*
     """
     USERS = {}
     GROUPS = {}
@@ -22,8 +22,8 @@ def get_users_and_groups(request):
 
 def groupfinder(userid, request):
     """
-    - If the userid exists in the system, it will return a sequence of group identifiers (or an empty sequence if the user isn't a member of any groups).
-    - If the userid does not exist in the system, it will return `None`.
+    *- If the userid exists in the system, it will return a sequence of group identifiers (or an empty sequence if the user isn't a member of any groups).
+    - If the userid does not exist in the system, it will return `None`.*
     """
     USERS, GROUPS = get_users_and_groups(request)
 

@@ -21,6 +21,7 @@ setup(name='dryxPyramid',
       author_email='davidrobertyoung@gmail.com',
       license='MIT',
       packages=['dryxPyramid'],
+      include_package_data=True,
       install_requires=[
           'pyramid',
           'sqlalchemy',
