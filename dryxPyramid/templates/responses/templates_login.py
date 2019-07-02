@@ -81,7 +81,7 @@ class templates_login():
         .. todo::
 
         """
-        self.log.info('starting the ``get`` method')
+        self.log.debug('starting the ``get`` method')
 
         loginPage = khufu.scaffolding.login_page(
             log=self.log,
@@ -94,7 +94,7 @@ class templates_login():
         )
         loginPage = loginPage.get()
 
-        self.log.info('completed the ``get`` method')
+        self.log.debug('completed the ``get`` method')
         return loginPage
 
     # xt-class-method

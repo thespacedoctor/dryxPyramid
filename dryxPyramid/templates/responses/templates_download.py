@@ -71,7 +71,7 @@ class templates_download():
         .. todo::
 
         """
-        self.log.info('starting the ``get`` method')
+        self.log.debug('starting the ``get`` method')
 
         # build the absolute filepath for the resource
         myWebapp = AssetResolver(self.qs["webapp"])
@@ -97,7 +97,7 @@ class templates_download():
             response.content_disposition = "attachment; filename=%(filename)s" % locals(
             )
 
-        self.log.info('completed the ``get`` method')
+        self.log.debug('completed the ``get`` method')
         return response
 
     def _set_default_parameters(
@@ -114,13 +114,13 @@ class templates_download():
         .. todo::
 
         """
-        self.log.info('starting the ``_set_default_parameters`` method')
+        self.log.debug('starting the ``_set_default_parameters`` method')
 
         for k, v in self.defaultQs.iteritems():
             if k not in self.qs:
                 self.qs[k] = v
 
-        self.log.info('completed the ``_set_default_parameters`` method')
+        self.log.debug('completed the ``_set_default_parameters`` method')
         return None
 
     # use the tab-trigger below for new method
