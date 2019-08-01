@@ -25,7 +25,14 @@ setup(name='dryxPyramid',
       install_requires=[
           'pyramid',
           'sqlalchemy',
-          'passlib'
+          'passlib',
+          'paste',
+          'sqlalchemy',
+          'fundamentals',
+          'mod_wsgi',
+          'pymysql',
+          'pytest',
+          'webtest'
       ],
       test_suite='nose.collector',
       tests_require=['nose', 'nose-cover3'],
