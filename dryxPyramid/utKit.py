@@ -99,32 +99,10 @@ class BaseTest(unittest.TestCase):
         moduleDirectory = os.path.dirname(__file__)
         app_settings = appconfig(
             'config:' + self.testIni)
-        engine = engine_from_config(app_settings, prefix='sqlalchemy.')
-        self.config = testing.setUp()
-        self.config.registry.dbmaker = sessionmaker(bind=engine)
-        self.config.add_request_method(db, reify=True)
-        self.config.add_settings(self.testSettings)
-
-        # SETUP A DATABASE CONNECTION BASED ON WHAT ARGUMENTS HAVE BEEN PASSED
-        settings = self.testSettings
-        if "database settings" in settings:
-            host = settings["database settings"]["host"]
-            user = settings["database settings"]["user"]
-            passwd = settings["database settings"]["password"]
-            dbName = settings["database settings"]["db"]
-            dbConn = ms.connect(
-                host=host,
-                user=user,
-                passwd=passwd,
-                db=dbName,
-                use_unicode=True,
-                charset='utf8',
-                local_infile=1,
-                client_flag=ms.constants.CLIENT.MULTI_STATEMENTS,
-                connect_timeout=3600
-            )
-            dbConn.autocommit(True)
-            self.config.add_settings({"dbConn": dbConn})
+        from webtest import TestApp
+        self.testapp = TestApp('config:' + self.testIni)
+        self.testapp.post(
+            '/login', params={'login': self.settings["test user"], 'password': self.settings["test pass"]})
 
     def tearDown(self):
         testing.tearDown()
