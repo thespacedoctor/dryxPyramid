@@ -3,6 +3,7 @@ import datetime
 import decimal
 from decimal import Decimal
 from pyramid.renderers import JSON
+from pyramid.response import Response
 
 
 class renderer_json(JSON):
