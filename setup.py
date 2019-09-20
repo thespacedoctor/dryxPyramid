@@ -2,7 +2,7 @@ from setuptools import setup
 
 
 def readme():
-    with open('README.rst') as f:
+    with open('README.md') as f:
         return f.read()
 
 setup(name='dryxPyramid',
@@ -25,7 +25,14 @@ setup(name='dryxPyramid',
       install_requires=[
           'pyramid',
           'sqlalchemy',
-          'passlib'
+          'passlib',
+          'paste',
+          'sqlalchemy',
+          'fundamentals',
+          'mod_wsgi',
+          'pymysql',
+          'pytest',
+          'webtest'
       ],
       test_suite='nose.collector',
       tests_require=['nose', 'nose-cover3'],
