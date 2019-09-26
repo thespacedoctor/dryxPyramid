@@ -39,7 +39,8 @@ setup(
         'sqlalchemy',
         'fundamentals',
         'mod_wsgi',
-        'pymysql'
+        'pymysql',
+        'mysql-python'
         # 'pytest',
         # 'webtest'
     ],
