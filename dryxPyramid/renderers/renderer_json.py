@@ -23,7 +23,7 @@ class renderer_json(JSON):
 
         # if table if empty
         if len(info):
-            tableColumnNames = info.keys()
+            tableColumnNames = list(info.keys())
 
         self.add_adapter(datetime.datetime, self.datetime_adapter)
         self.add_adapter(decimal.Decimal, self.decimal_adapter)
