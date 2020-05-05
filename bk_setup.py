@@ -20,7 +20,6 @@ install_requires = [
     'fundamentals',
     'mod_wsgi',
     'pymysql',
-    'khufu'
 ]
 
 # READ THE DOCS SERVERS

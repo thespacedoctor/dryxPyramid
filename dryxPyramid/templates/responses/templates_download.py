@@ -16,7 +16,6 @@
 import sys
 import os
 from datetime import datetime, date, time
-import khufu
 from pyramid.response import FileResponse
 from pyramid.path import AssetResolver
 
