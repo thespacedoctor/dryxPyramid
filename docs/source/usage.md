@@ -2,7 +2,7 @@
 
 ```bash 
     
-    Documentation for dryxPyramid can be found here: http://dryxPyramid.readthedocs.org/en/stable
+    Documentation for dryxPyramid can be found here: http://dryxPyramid.readthedocs.org
     
     Usage:
         dryxPyramid init

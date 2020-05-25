@@ -5,9 +5,6 @@
 
 :Author:
     David Young
-
-.. todo::
-    
 """
 from builtins import object
 import sys
@@ -15,6 +12,7 @@ import os
 from datetime import datetime, date, time
 from pyramid.response import FileResponse
 from pyramid.path import AssetResolver
+
 
 class templates_download(object):
     """
@@ -25,9 +23,7 @@ class templates_download(object):
     - ``log`` -- logger
     - ``request`` -- the pyramid request
     - ``elementId`` -- the specific element requested (or False)
-    
 
-    .. todo::
     """
 
     def __init__(
@@ -63,9 +59,6 @@ class templates_download(object):
         **Return**
 
         - ``responseContent`` -- the response
-        
-
-        .. todo::
         """
         self.log.debug('starting the ``get`` method')
 
@@ -104,12 +97,12 @@ class templates_download(object):
         **Key Arguments**
 
         # -
-        
+
 
         **Return**
 
         - None
-        
+
 
         .. todo::
         """

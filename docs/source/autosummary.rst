@@ -6,9 +6,16 @@ Modules
    :toctree: _autosummary
    :nosignatures:
 
-   dryxPyramid.commonutils 
-   dryxPyramid.docstring_test
-   dryxPyramid.utKit 
+   dryxPyramid.models
+   dryxPyramid.renderers
+   dryxPyramid.templates
+   dryxPyramid.templates.responses
+   dryxPyramid.views 
+   dryxPyramid.models.models_login_post
+   dryxPyramid.security
+   dryxPyramid.views.views_download
+   dryxPyramid.views.views_login
+   dryxPyramid.views.views_logout 
 
 
 Classes
@@ -18,7 +25,15 @@ Classes
    :toctree: _autosummary
    :nosignatures:
 
-   dryxPyramid.utKit.utKit 
+   dryxPyramid.models.models_login_post.RootFactory
+   dryxPyramid.renderers.renderer_csv
+   dryxPyramid.renderers.renderer_json
+   dryxPyramid.renderers.renderer_plain_table
+   dryxPyramid.renderers.renderer_plain_text
+   dryxPyramid.templates.responses.templates_download
+   dryxPyramid.templates.responses.templates_login
+   dryxPyramid.views.views_download.download_view
+   dryxPyramid.views.views_login.login_view 
 
 
 Functions
@@ -28,4 +43,6 @@ Functions
    :toctree: _autosummary
    :nosignatures:
 
-   dryxPyramid.docstring_test.docsting_test 
+   dryxPyramid.security.get_users_and_groups
+   dryxPyramid.views.views_login.forbidden
+   dryxPyramid.views.views_logout.logout 

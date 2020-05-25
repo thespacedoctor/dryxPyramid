@@ -6,13 +6,12 @@
 :Author:
     David Young
 
-.. todo::
-    
 """
 from builtins import object
 import sys
 import os
 import khufu
+
 
 class templates_login(object):
     """
@@ -28,9 +27,6 @@ class templates_login(object):
     - ``icon`` -- webapp icon
     - ``came_from`` -- the url this login page was triggered from
     - ``message`` -- message to display as notification
-    
-
-    .. todo::
     """
     # Initialisation
 
@@ -74,9 +70,6 @@ class templates_login(object):
         **Return**
 
         - ``loginPage`` -- the login page
-        
-
-        .. todo::
         """
         self.log.debug('starting the ``get`` method')
 
