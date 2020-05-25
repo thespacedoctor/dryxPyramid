@@ -1,6 +1,5 @@
 from builtins import object
 import logging
-import pyramid.httpexceptions as exc
 from pyramid.httpexceptions import HTTPFound
 from pyramid.response import Response
 from pyramid.view import view_config, view_defaults, forbidden_view_config
@@ -10,6 +9,7 @@ from dryxPyramid.security import get_users_and_groups
 from dryxPyramid.templates.responses import templates_login
 
 # RESOURCE CONTEXT
+
 
 @forbidden_view_config()
 def forbidden(request):
@@ -21,6 +21,7 @@ def forbidden(request):
         login.message = "You do not have the correct permissions to perform this action"
     # href = request.route_path('login')
     return login.login()
+
 
 @view_defaults(route_name='login', permission="view_everyone")
 class login_view(object):
@@ -68,7 +69,8 @@ class login_view(object):
         loginPage = templates_login(
             log=self.log,
             request=request,
-            mainCssFilePath=self.request.registry.settings["main css filepath"],
+            mainCssFilePath=self.request.registry.settings[
+                "main css filepath"],
             jsFilePath=self.request.registry.settings["main js filepath"],
             pageTitle="Login",
             iconPath=self.request.registry.settings["path to webapp icon"],

@@ -1,13 +1,13 @@
 # @review clean me
 
 import logging
-import pyramid.httpexceptions as exc
 from pyramid.httpexceptions import HTTPFound
 from pyramid.response import Response
 from pyramid.view import view_config, view_defaults, forbidden_view_config
 from pyramid.security import remember, forget
 
 # RESOURCE CONTEXT
+
 
 @view_config(route_name='logout',  permission="view_everyone")
 def logout(request):

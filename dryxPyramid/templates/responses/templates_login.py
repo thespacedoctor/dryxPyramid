@@ -5,13 +5,11 @@
 
 :Author:
     David Young
-
 """
 from builtins import object
 import sys
 import os
 import khufu
-
 
 class templates_login(object):
     """

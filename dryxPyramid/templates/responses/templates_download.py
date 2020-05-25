@@ -13,7 +13,6 @@ from datetime import datetime, date, time
 from pyramid.response import FileResponse
 from pyramid.path import AssetResolver
 
-
 class templates_download(object):
     """
     *The worker class for the templates_download module*
@@ -23,7 +22,6 @@ class templates_download(object):
     - ``log`` -- logger
     - ``request`` -- the pyramid request
     - ``elementId`` -- the specific element requested (or False)
-
     """
 
     def __init__(
@@ -98,11 +96,9 @@ class templates_download(object):
 
         # -
 
-
         **Return**
 
         - None
-
 
         .. todo::
         """

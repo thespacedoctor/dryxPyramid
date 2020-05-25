@@ -1,6 +1,5 @@
 from builtins import zip
 
-
 def get_users_and_groups(request):
     """
     *Get the users and groups from the database*
@@ -22,7 +21,6 @@ def get_users_and_groups(request):
         GROUPS[name] = ["group:" + row["permissions"]]
 
     return USERS, GROUPS
-
 
 def groupfinder(userid, request):
     """
