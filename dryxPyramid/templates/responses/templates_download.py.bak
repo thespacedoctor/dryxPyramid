@@ -13,7 +13,6 @@
     
 """
 ################# GLOBAL IMPORTS ####################
-from builtins import object
 import sys
 import os
 from datetime import datetime, date, time
@@ -21,7 +20,7 @@ from pyramid.response import FileResponse
 from pyramid.path import AssetResolver
 
 
-class templates_download(object):
+class templates_download():
 
     """
     *The worker class for the templates_download module*
@@ -116,7 +115,7 @@ class templates_download(object):
         """
         self.log.debug('starting the ``_set_default_parameters`` method')
 
-        for k, v in list(self.defaultQs.items()):
+        for k, v in self.defaultQs.items():
             if k not in self.qs:
                 self.qs[k] = v
 

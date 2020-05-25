@@ -13,13 +13,12 @@
     
 """
 ################# GLOBAL IMPORTS ####################
-from builtins import object
 import sys
 import os
 import khufu
 
 
-class templates_login(object):
+class templates_login():
 
     """
     *The worker class for the templates_login module*

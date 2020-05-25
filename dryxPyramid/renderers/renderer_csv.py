@@ -1,3 +1,6 @@
+from builtins import str
+from builtins import range
+from builtins import object
 import csv
 import io
 import re
@@ -39,7 +42,7 @@ class renderer_csv(object):
         # Column Headers and widths
         header = []
         allRows = []
-        tableColumnNames = rows[0].keys()
+        tableColumnNames = list(rows[0].keys())
         columnWidths = []
         columnWidths[:] = [len(tableColumnNames[i])
                            for i in range(len(tableColumnNames))]
@@ -52,7 +55,7 @@ class renderer_csv(object):
         # clean up data
         for row in rows:
             for c in tableColumnNames:
-                if isinstance(row[c], float) or isinstance(row[c], long) or isinstance(row[c], Decimal):
+                if isinstance(row[c], float) or isinstance(row[c], int) or isinstance(row[c], Decimal):
                     row[c] = "%0.4f" % row[c]
                 elif isinstance(row[c], datetime):
                     thisDate = str(row[c])[:10]

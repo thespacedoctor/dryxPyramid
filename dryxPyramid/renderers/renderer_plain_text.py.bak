@@ -1,4 +1,3 @@
-from builtins import object
 import io
 import csv
 import re
