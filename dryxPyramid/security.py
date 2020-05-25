@@ -20,7 +20,6 @@ def get_users_and_groups(request):
 
     return USERS, GROUPS
 
-
 def groupfinder(userid, request):
     """
     *- If the userid exists in the system, it will return a sequence of group identifiers (or an empty sequence if the user isn't a member of any groups).

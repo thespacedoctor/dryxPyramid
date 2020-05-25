@@ -6,36 +6,31 @@
 :Author:
     David Young
 
-:Date Created:
-    November 20, 2014
-
 .. todo::
     
 """
-################# GLOBAL IMPORTS ####################
 from builtins import object
 import sys
 import os
 import khufu
 
-
 class templates_login(object):
-
     """
     *The worker class for the templates_login module*
 
-    **Key Arguments:**
-        - ``log`` -- logger
-        - ``request`` -- the pyramid request
-        - ``mainCssFilePath`` -- the filename of the main css file
-        - ``jsFilePath`` -- the filename of the main js file
-        - ``pageTitle`` -- pageTitle
-        - ``icon`` -- webapp icon
-        - ``came_from`` -- the url this login page was triggered from
-        - ``message`` -- message to display as notification
+    **Key Arguments**
+
+    - ``log`` -- logger
+    - ``request`` -- the pyramid request
+    - ``mainCssFilePath`` -- the filename of the main css file
+    - ``jsFilePath`` -- the filename of the main js file
+    - ``pageTitle`` -- pageTitle
+    - ``icon`` -- webapp icon
+    - ``came_from`` -- the url this login page was triggered from
+    - ``message`` -- message to display as notification
+    
 
     .. todo::
-
     """
     # Initialisation
 
@@ -76,11 +71,12 @@ class templates_login(object):
         """
         *get the templates_login object*
 
-        **Return:**
-            - ``loginPage`` -- the login page
+        **Return**
+
+        - ``loginPage`` -- the login page
+        
 
         .. todo::
-
         """
         self.log.debug('starting the ``get`` method')
 

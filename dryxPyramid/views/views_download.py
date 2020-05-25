@@ -8,7 +8,6 @@ from ..templates.responses import templates_download
 
 # RESOURCE CONTEXT
 
-
 @view_defaults(route_name='download', permission="view_users")
 class download_view(object):
 

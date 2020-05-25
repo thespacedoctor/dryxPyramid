@@ -1,7 +1,6 @@
 from builtins import object
 from pyramid.security import Allow, Everyone
 
-
 class RootFactory(object):
     __acl__ = [(Allow, Everyone, 'view_everyone'),
                (Allow, 'group:view_users', ('view_everyone', 'view_users')),

@@ -6,13 +6,9 @@
 :Author:
     David Young
 
-:Date Created:
-    November 13, 2014
-
 .. todo::
     
 """
-################# GLOBAL IMPORTS ####################
 from builtins import object
 import sys
 import os
@@ -20,19 +16,18 @@ from datetime import datetime, date, time
 from pyramid.response import FileResponse
 from pyramid.path import AssetResolver
 
-
 class templates_download(object):
-
     """
     *The worker class for the templates_download module*
 
-    **Key Arguments:**
-        - ``log`` -- logger
-        - ``request`` -- the pyramid request
-        - ``elementId`` -- the specific element requested (or False)
+    **Key Arguments**
+
+    - ``log`` -- logger
+    - ``request`` -- the pyramid request
+    - ``elementId`` -- the specific element requested (or False)
+    
 
     .. todo::
-
     """
 
     def __init__(
@@ -65,11 +60,12 @@ class templates_download(object):
         """
         *get the templates_download object*
 
-        **Return:**
-            - ``responseContent`` -- the response
+        **Return**
+
+        - ``responseContent`` -- the response
+        
 
         .. todo::
-
         """
         self.log.debug('starting the ``get`` method')
 
@@ -105,14 +101,17 @@ class templates_download(object):
         """
         *set default parameters*
 
-        **Key Arguments:**
-            # -
+        **Key Arguments**
 
-        **Return:**
-            - None
+        # -
+        
+
+        **Return**
+
+        - None
+        
 
         .. todo::
-
         """
         self.log.debug('starting the ``_set_default_parameters`` method')
 

@@ -11,7 +11,6 @@ from dryxPyramid.templates.responses import templates_login
 
 # RESOURCE CONTEXT
 
-
 @forbidden_view_config()
 def forbidden(request):
     login = login_view(request)
@@ -22,7 +21,6 @@ def forbidden(request):
         login.message = "You do not have the correct permissions to perform this action"
     # href = request.route_path('login')
     return login.login()
-
 
 @view_defaults(route_name='login', permission="view_everyone")
 class login_view(object):

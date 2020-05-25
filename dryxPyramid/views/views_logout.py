@@ -9,7 +9,6 @@ from pyramid.security import remember, forget
 
 # RESOURCE CONTEXT
 
-
 @view_config(route_name='logout',  permission="view_everyone")
 def logout(request):
     referrer = request.url
