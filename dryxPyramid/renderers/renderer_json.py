@@ -6,6 +6,7 @@ from decimal import Decimal
 from pyramid.renderers import JSON
 from pyramid.response import Response
 
+
 class renderer_json(JSON):
     """
     *The json renderer - can return content to browser or a file to download*
@@ -17,7 +18,9 @@ class renderer_json(JSON):
     def __call__(self, info, system):
         _render = JSON.__call__(self, info)
 
+        data = False
         if isinstance(info, list):
+            data = True
             info = {"data": info}
 
         # if table if empty
@@ -45,6 +48,8 @@ class renderer_json(JSON):
             response.content_type = 'text/json'
             response.content_disposition = "attachment; filename=%(filename)s.json" % locals(
             )
+        if data:
+            info = info["data"]
         return _render(info, system)
 
     def datetime_adapter(self, obj, request):

@@ -5,6 +5,7 @@ import re
 from decimal import Decimal
 from datetime import datetime
 
+
 class renderer_plain_text(object):
     """
     *The plain_text renderer - can return content to browser or a file to download*
@@ -33,7 +34,7 @@ class renderer_plain_text(object):
             )
 
         # create a virutal file to write the content to
-        output = io.BytesIO(content)
+        output = io.StringIO(content)
         output = output.getvalue()
         output = output.strip()
         returnOutput = output

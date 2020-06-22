@@ -1,9 +1,21 @@
 """
 *Unit testing tools*
 """
+import os
+import shutil
+import unittest
+import yaml
+from pyramid import testing
+from pyramid.path import AssetResolver
+from pyramid.request import apply_request_extensions
+from paste.deploy.loadwsgi import appconfig
+import pymysql as ms
+from sqlalchemy import engine_from_config
+from sqlalchemy.orm import sessionmaker
 from fundamentals import utKit
 
 # OVERRIDES
+
 
 class utKit(utKit):
     """
@@ -52,12 +64,12 @@ class utKit(utKit):
         self.dbConfig = False
         if dbConn:
             self.dbConfig = """
-             version: 1
-             db: dryx_unit_testing
-             host: localhost
-             user: unittesting
-             password: utpass
-             """
+            version: 1
+            db: unit_tests
+            host: localhost
+            user: utuser
+            password: utpass
+            """
 
         return
 
@@ -68,7 +80,7 @@ class utKit(utKit):
         **Return**
 
         - ``rootPath`` -- the root path of a project
-        
+
         """
         import os
         rootPath = os.path.dirname(__file__)
@@ -99,3 +111,41 @@ class utKit(utKit):
             successRule=None,
             failureRule=None
         )
+
+
+def db(request):
+    # database connection
+    maker = request.registry.dbmaker
+    session = maker()
+
+    def cleanup(request):
+        if request.exception is not None:
+            session.rollback()
+        else:
+            session.commit()
+        session.close()
+    request.add_finished_callback(cleanup)
+
+    return session
+
+
+class BaseTest(unittest.TestCase):
+
+    def __init__(self, *args, **kwargs):
+        unittest.TestCase.__init__(self, *args, **kwargs)
+
+    def setUp(self):
+        '''This is the default setup method for pyramid unit tests. It will instantiate a database connection to the unit_tesing database on localhost
+        '''
+        moduleDirectory = os.path.dirname(__file__)
+        app_settings = appconfig(
+            'config:' + self.testIni)
+        from webtest import TestApp
+        self.testapp = TestApp('config:' + self.testIni)
+        # test user and test pass need to be adding to the test_settings.yaml
+        # file
+        self.testapp.post(
+            '/login', params={'login': self.settings["test user"], 'password': self.settings["test pass"]})
+
+    def tearDown(self):
+        testing.tearDown()

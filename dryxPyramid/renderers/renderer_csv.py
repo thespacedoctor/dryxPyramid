@@ -7,6 +7,7 @@ import re
 from decimal import Decimal
 from datetime import datetime
 
+
 class renderer_csv(object):
     """
     *The CSV renderer - can return plain text in browser or a file to download*
@@ -46,14 +47,14 @@ class renderer_csv(object):
                            for i in range(len(tableColumnNames))]
 
         # create a virutal file to write the content to
-        output = io.BytesIO()
+        output = io.StringIO()
         writer = csv.writer(
             output, dialect='excel', delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
         # clean up data
         for row in rows:
             for c in tableColumnNames:
-                if isinstance(row[c], float) or isinstance(row[c], int) or isinstance(row[c], Decimal):
+                if isinstance(row[c], float) or isinstance(row[c], Decimal):
                     row[c] = "%0.4f" % row[c]
                 elif isinstance(row[c], datetime):
                     thisDate = str(row[c])[:10]

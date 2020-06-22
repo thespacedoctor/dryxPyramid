@@ -7,6 +7,7 @@ import re
 from decimal import Decimal
 from datetime import datetime
 
+
 class renderer_plain_table(object):
     """
     *The plain_table renderer - can return content to browser or a file to download*
@@ -48,7 +49,7 @@ class renderer_plain_table(object):
                            for i in range(len(tableColumnNames))]
 
         # create a virutal file to write the content to
-        output = io.BytesIO()
+        output = io.StringIO()
 
         # setup csv styles
         delimiter = "|"
@@ -60,7 +61,7 @@ class renderer_plain_table(object):
         # clean up data
         for row in rows:
             for c in tableColumnNames:
-                if isinstance(row[c], float) or isinstance(row[c], int) or isinstance(row[c], Decimal):
+                if isinstance(row[c], float) or isinstance(row[c], Decimal):
                     row[c] = "%0.2f" % row[c]
                 elif isinstance(row[c], datetime):
                     thisDate = str(row[c])[:10]
