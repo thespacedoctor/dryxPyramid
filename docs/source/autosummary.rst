@@ -11,8 +11,11 @@ Modules
    dryxPyramid.templates
    dryxPyramid.templates.responses
    dryxPyramid.views 
+   dryxPyramid.models.models_base
    dryxPyramid.models.models_login_post
    dryxPyramid.security
+   dryxPyramid.views.views_base
+   dryxPyramid.views.views_base_element
    dryxPyramid.views.views_download
    dryxPyramid.views.views_login
    dryxPyramid.views.views_logout 
@@ -25,6 +28,7 @@ Classes
    :toctree: _autosummary
    :nosignatures:
 
+   dryxPyramid.models.models_base.base_model
    dryxPyramid.models.models_login_post.RootFactory
    dryxPyramid.renderers.renderer_csv
    dryxPyramid.renderers.renderer_json
@@ -32,6 +36,8 @@ Classes
    dryxPyramid.renderers.renderer_plain_text
    dryxPyramid.templates.responses.templates_download
    dryxPyramid.templates.responses.templates_login
+   dryxPyramid.views.views_base.base_view
+   dryxPyramid.views.views_base_element.base_element_view
    dryxPyramid.views.views_download.download_view
    dryxPyramid.views.views_login.login_view 
 

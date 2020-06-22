@@ -15,6 +15,8 @@ Submodules
 .. toctree::
    :maxdepth: 4
 
+   dryxPyramid.views.views_base
+   dryxPyramid.views.views_base_element
    dryxPyramid.views.views_download
    dryxPyramid.views.views_login
    dryxPyramid.views.views_logout

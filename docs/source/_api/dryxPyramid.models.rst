@@ -15,4 +15,5 @@ Submodules
 .. toctree::
    :maxdepth: 4
 
+   dryxPyramid.models.models_base
    dryxPyramid.models.models_login_post

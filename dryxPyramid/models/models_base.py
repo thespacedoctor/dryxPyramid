@@ -6,13 +6,10 @@
 :Author:
     David Young
 """
-from builtins import zip
+
 from builtins import object
 import sys
 import os
-import khufu
-import collections
-import re
 
 
 class base_model(object):
