@@ -36,8 +36,8 @@ class base_view(object):
         resourceName = self.resourceName
         return exc.exception_response(404, body_template="The POST is not allowed on the '%(resourceName)s' resource" % locals())
 
-    @view_config(request_method='GET',  renderer="json", permission="view_users")
-    @view_config(request_param="method=get",  renderer="json", permission="view_users")
+    @view_config(request_method='GET',  permission="view_users")
+    @view_config(request_param="method=get",  permission="view_users")
     def get(self):
         import pyramid.httpexceptions as exc
         resourceName = self.resourceName
