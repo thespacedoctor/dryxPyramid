@@ -1,4 +1,4 @@
-views_download *(module)*
+ *(module)*
 ===========================================
 
 
@@ -35,18 +35,6 @@ views_download *(module)*
     .. autosummary::
     
     
-        
-            ~HTTPFound (nice)
-       
-    
-    
-        
-            ~Response (nice)
-       
-    
-    
-    
-    
     
     
     
@@ -55,31 +43,6 @@ views_download *(module)*
     
         
             ~download_view (nice)
-       
-    
-    
-        
-            ~logging (nice)
-       
-    
-    
-        
-            ~object (nice)
-       
-    
-    
-        
-            ~templates_download (nice)
-       
-    
-    
-        
-            ~view_config (nice)
-       
-    
-    
-        
-            ~view_defaults (nice)
        
     
     

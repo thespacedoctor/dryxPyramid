@@ -1,4 +1,4 @@
-views *(module)*
+ *(module)*
 ============================
 
 
@@ -34,34 +34,6 @@ views *(module)*
     
     
     
-    
-    
-    
-    
-    
-        
-            ~views_base (nice)
-       
-    
-    
-        
-            ~views_base_element (nice)
-       
-    
-    
-        
-            ~views_download (nice)
-       
-    
-    
-        
-            ~views_login (nice)
-       
-    
-    
-        
-            ~views_logout (nice)
-       
     
     
     

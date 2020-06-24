@@ -1,4 +1,4 @@
-models_base *(module)*
+ *(module)*
 =========================================
 
 
@@ -41,25 +41,8 @@ models_base *(module)*
     
     
     
-    
-    
         
             ~base_model (nice)
-       
-    
-    
-        
-            ~object (nice)
-       
-    
-    
-        
-            ~os (nice)
-       
-    
-    
-        
-            ~sys (nice)
        
     
     

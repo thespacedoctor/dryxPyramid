@@ -1,4 +1,4 @@
-views_logout *(module)*
+ *(module)*
 =========================================
 
 
@@ -35,56 +35,14 @@ views_logout *(module)*
     .. autosummary::
     
     
-        
-            ~HTTPFound (nice)
-       
-    
-    
-        
-            ~Response (nice)
-       
     
     
     
     
-    
-    
-    
-    
-    
-    
-        
-            ~forbidden_view_config (nice)
-       
-    
-    
-        
-            ~forget (nice)
-       
-    
-    
-        
-            ~logging (nice)
-       
     
     
         
             ~logout (nice)
-       
-    
-    
-        
-            ~remember (nice)
-       
-    
-    
-        
-            ~view_config (nice)
-       
-    
-    
-        
-            ~view_defaults (nice)
        
     
     

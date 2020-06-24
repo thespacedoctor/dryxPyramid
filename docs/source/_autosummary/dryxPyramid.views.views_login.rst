@@ -1,4 +1,4 @@
-views_login *(module)*
+ *(module)*
 ========================================
 
 
@@ -41,18 +41,6 @@ views_login *(module)*
     .. autosummary::
     
     
-        
-            ~HTTPFound (nice)
-       
-    
-    
-        
-            ~Response (nice)
-       
-    
-    
-    
-    
     
     
     
@@ -65,57 +53,7 @@ views_login *(module)*
     
     
         
-            ~forbidden_view_config (nice)
-       
-    
-    
-        
-            ~forget (nice)
-       
-    
-    
-        
-            ~get_users_and_groups (nice)
-       
-    
-    
-        
-            ~logging (nice)
-       
-    
-    
-        
             ~login_view (nice)
-       
-    
-    
-        
-            ~object (nice)
-       
-    
-    
-        
-            ~remember (nice)
-       
-    
-    
-        
-            ~sha256_crypt (nice)
-       
-    
-    
-        
-            ~templates_login (nice)
-       
-    
-    
-        
-            ~view_config (nice)
-       
-    
-    
-        
-            ~view_defaults (nice)
        
     
     

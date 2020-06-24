@@ -1,4 +1,4 @@
-renderers *(module)*
+ *(module)*
 ================================
 
 
@@ -34,29 +34,6 @@ renderers *(module)*
     
     
     
-    
-    
-    
-    
-    
-        
-            ~renderer_csv (nice)
-       
-    
-    
-        
-            ~renderer_json (nice)
-       
-    
-    
-        
-            ~renderer_plain_table (nice)
-       
-    
-    
-        
-            ~renderer_plain_text (nice)
-       
     
     
     

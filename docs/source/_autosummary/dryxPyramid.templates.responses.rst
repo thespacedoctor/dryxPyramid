@@ -1,4 +1,4 @@
-responses *(module)*
+ *(module)*
 ==========================================
 
 
@@ -34,19 +34,6 @@ responses *(module)*
     
     
     
-    
-    
-    
-    
-    
-        
-            ~templates_download (nice)
-       
-    
-    
-        
-            ~templates_login (nice)
-       
     
     
     

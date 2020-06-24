@@ -1,4 +1,4 @@
-views_base_element *(module)*
+ *(module)*
 ===============================================
 
 
@@ -35,18 +35,6 @@ views_base_element *(module)*
     .. autosummary::
     
     
-        
-            ~HTTPFound (nice)
-       
-    
-    
-        
-            ~Response (nice)
-       
-    
-    
-    
-    
     
     
     
@@ -55,26 +43,6 @@ views_base_element *(module)*
     
         
             ~base_element_view (nice)
-       
-    
-    
-        
-            ~logging (nice)
-       
-    
-    
-        
-            ~object (nice)
-       
-    
-    
-        
-            ~view_config (nice)
-       
-    
-    
-        
-            ~view_defaults (nice)
        
     
     

@@ -1,4 +1,4 @@
-templates *(module)*
+ *(module)*
 ================================
 
 
@@ -34,14 +34,6 @@ templates *(module)*
     
     
     
-    
-    
-    
-    
-    
-        
-            ~responses (nice)
-       
     
     
     
