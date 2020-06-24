@@ -37,7 +37,7 @@ class base_model(object):
         self.qs = dict(request.params)  # the query string
         # the query string defaults
         self.defaultQs = {
-            "format": "json"
+            "format": None
         }
         self.sql = {}
         # self.resourceName = "basemodel"
@@ -62,8 +62,13 @@ class base_model(object):
         """
         self.log.debug('starting the ``_set_default_parameters`` method')
 
-        self.qs = {
-            "format": "json",
+        # refererRoute = self.request.referer.split(
+        #     self.request.host)[1].split("?")[0]
+        # requestRoute = self.request.url.split(
+        #     self.request.host)[1].split("?")[0]
+
+        defaultQs = {
+            "format": None,
             "pageLimit": 100,
             "pageStart": 0,
             "sortBy": False,
@@ -76,8 +81,15 @@ class base_model(object):
             "filterOp2": False
         }
 
+        # NOW OVERRIDE THESE DEFAULTS IF NEEDED
         for k, v in self.defaultQs.items():
-            self.qs[k] = v
+            defaultQs[k] = v
+
+        # ADD DEFAULTS TO THIS REQUEST - CLEAR OUR PARAMETERS COMING FROM A
+        # NON-RELATED RESOURCE/ROUTE
+        for k, v in defaultQs.items():
+            if k not in self.qs.keys():
+                self.qs[k] = v
 
         self.sql["where"] = " where 1=1 "
         self.sql["limit"] = ""
