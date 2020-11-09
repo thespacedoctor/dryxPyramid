@@ -1,4 +1,4 @@
- *(module)*
+﻿renderers *(module)*
 ================================
 
 
@@ -11,6 +11,15 @@
     :member-order: groupwise
     
     
+    
+    .. rubric:: Classes
+
+    .. autosummary::
+    
+      ~renderer_csv
+      ~renderer_json
+      ~renderer_plain_table
+      ~renderer_plain_text
     
     
 
@@ -34,6 +43,29 @@
     
     
     
+    
+    
+    
+    
+    
+        
+            ~renderer_csv (nice)
+       
+    
+    
+        
+            ~renderer_json (nice)
+       
+    
+    
+        
+            ~renderer_plain_table (nice)
+       
+    
+    
+        
+            ~renderer_plain_text (nice)
+       
     
     
     

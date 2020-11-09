@@ -1,4 +1,4 @@
-get_users_and_groups (*function*)
+﻿get_users_and_groups (*function*)
 ======================================================
 
 .. currentmodule:: dryxPyramid.security

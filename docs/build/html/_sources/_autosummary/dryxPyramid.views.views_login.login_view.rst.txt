@@ -1,4 +1,4 @@
-login_view *(class)*
+﻿login_view *(class)*
 ==================================================
 
 .. currentmodule:: dryxPyramid.views.views_login

@@ -1,4 +1,4 @@
-templates_download *(class)*
+﻿templates_download *(class)*
 ============================================================
 
 .. currentmodule:: dryxPyramid.templates.responses

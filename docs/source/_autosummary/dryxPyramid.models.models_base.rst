@@ -1,4 +1,4 @@
- *(module)*
+﻿models_base *(module)*
 =========================================
 
 
@@ -17,6 +17,7 @@
     .. autosummary::
     
       ~base_model
+      ~object
     
     
 
@@ -41,8 +42,25 @@
     
     
     
+    
+    
         
             ~base_model (nice)
+       
+    
+    
+        
+            ~object (nice)
+       
+    
+    
+        
+            ~os (nice)
+       
+    
+    
+        
+            ~sys (nice)
        
     
     

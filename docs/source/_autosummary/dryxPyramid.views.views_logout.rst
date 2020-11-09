@@ -1,4 +1,4 @@
- *(module)*
+﻿views_logout *(module)*
 =========================================
 
 
@@ -12,6 +12,14 @@
     
     
     
+    .. rubric:: Classes
+
+    .. autosummary::
+    
+      ~Response
+      ~forbidden_view_config
+      ~view_config
+    
     
 
     
@@ -20,7 +28,10 @@
 
     .. autosummary::
     
+      ~forget
       ~logout
+      ~remember
+      ~view_defaults
     
     
 
@@ -35,6 +46,18 @@
     .. autosummary::
     
     
+        
+            ~HTTPFound (nice)
+       
+    
+    
+        
+            ~Response (nice)
+       
+    
+    
+    
+    
     
     
     
@@ -42,7 +65,37 @@
     
     
         
+            ~forbidden_view_config (nice)
+       
+    
+    
+        
+            ~forget (nice)
+       
+    
+    
+        
+            ~logging (nice)
+       
+    
+    
+        
             ~logout (nice)
+       
+    
+    
+        
+            ~remember (nice)
+       
+    
+    
+        
+            ~view_config (nice)
+       
+    
+    
+        
+            ~view_defaults (nice)
        
     
     

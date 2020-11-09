@@ -1,4 +1,4 @@
- *(module)*
+﻿responses *(module)*
 ==========================================
 
 
@@ -11,6 +11,13 @@
     :member-order: groupwise
     
     
+    
+    .. rubric:: Classes
+
+    .. autosummary::
+    
+      ~templates_download
+      ~templates_login
     
     
 
@@ -34,6 +41,19 @@
     
     
     
+    
+    
+    
+    
+    
+        
+            ~templates_download (nice)
+       
+    
+    
+        
+            ~templates_login (nice)
+       
     
     
     

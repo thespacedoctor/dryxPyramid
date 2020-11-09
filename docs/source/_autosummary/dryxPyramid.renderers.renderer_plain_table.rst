@@ -1,4 +1,4 @@
-renderer_plain_table *(class)*
+﻿renderer_plain_table *(class)*
 ====================================================
 
 .. currentmodule:: dryxPyramid.renderers

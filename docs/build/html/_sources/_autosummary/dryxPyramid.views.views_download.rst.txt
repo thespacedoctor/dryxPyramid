@@ -1,4 +1,4 @@
- *(module)*
+﻿views_download *(module)*
 ===========================================
 
 
@@ -16,11 +16,21 @@
 
     .. autosummary::
     
+      ~Response
       ~download_view
+      ~object
+      ~templates_download
+      ~view_config
     
     
 
     
+    
+    .. rubric:: Functions
+
+    .. autosummary::
+    
+      ~view_defaults
     
     
 
@@ -35,6 +45,18 @@
     .. autosummary::
     
     
+        
+            ~HTTPFound (nice)
+       
+    
+    
+        
+            ~Response (nice)
+       
+    
+    
+    
+    
     
     
     
@@ -43,6 +65,31 @@
     
         
             ~download_view (nice)
+       
+    
+    
+        
+            ~logging (nice)
+       
+    
+    
+        
+            ~object (nice)
+       
+    
+    
+        
+            ~templates_download (nice)
+       
+    
+    
+        
+            ~view_config (nice)
+       
+    
+    
+        
+            ~view_defaults (nice)
        
     
     

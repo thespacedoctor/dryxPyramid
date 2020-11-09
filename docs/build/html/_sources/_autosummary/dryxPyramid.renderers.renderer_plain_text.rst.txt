@@ -1,4 +1,4 @@
-renderer_plain_text *(class)*
+﻿renderer_plain_text *(class)*
 ===================================================
 
 .. currentmodule:: dryxPyramid.renderers

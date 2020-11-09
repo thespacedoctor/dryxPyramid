@@ -47,7 +47,6 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Installation" href="install.html" />
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
           messageStyle: "none",
@@ -142,23 +141,16 @@
               
             
             
-              <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="initialisation.html">Initialisation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="todolist.html">Todo List</a></li>
-<li class="toctree-l1"><a class="reference internal" href="changes_link.html">Release Notes</a></li>
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">dryxPyramid</a><ul>
+<li><a class="reference internal" href="#features">Features</a></li>
+<li><a class="reference internal" href="#api-reference">API Reference</a></li>
+<li><a class="reference internal" href="#release-notes">Release Notes</a></li>
 </ul>
-<p class="caption"><span class="caption-text">API reference</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="autosummary.html">Modules</a></li>
-<li class="toctree-l1"><a class="reference internal" href="autosummary.html#classes">Classes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="autosummary.html#functions">Functions</a></li>
+</li>
 </ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="genindex.html">A-Z Index</a></li>
-</ul>
-
+</div>
             
           
         </div>
@@ -228,8 +220,8 @@
 <a class="reference external" href="https://pypi.org/project/dryxPyramid/"><img alt="https://img.shields.io/pypi/v/dryxPyramid" src="https://img.shields.io/pypi/v/dryxPyramid" /></a>
 <a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid"><img alt="https://img.shields.io/github/license/thespacedoctor/dryxPyramid" src="https://img.shields.io/github/license/thespacedoctor/dryxPyramid" /></a>
 <a class="reference external" href="https://pypi.org/project/dryxPyramid/"><img alt="https://img.shields.io/pypi/dm/dryxPyramid" src="https://img.shields.io/pypi/dm/dryxPyramid" /></a></p>
-<p><a class="reference external" href="http://167.99.90.204:8080/blue/organizations/jenkins/dryxPyramid/activity?branch=master"><img alt="http://167.99.90.204:8080/buildStatus/icon?job=dryxPyramid%2Fmaster&amp;subject=build%20master" src="http://167.99.90.204:8080/buildStatus/icon?job=dryxPyramid%2Fmaster&amp;subject=build%20master" /></a>
-<a class="reference external" href="http://167.99.90.204:8080/blue/organizations/jenkins/dryxPyramid/activity?branch=develop"><img alt="http://167.99.90.204:8080/buildStatus/icon?job=dryxPyramid%2Fdevelop&amp;subject=build%20dev" src="http://167.99.90.204:8080/buildStatus/icon?job=dryxPyramid%2Fdevelop&amp;subject=build%20dev" /></a>
+<p><a class="reference external" href="http://167.71.135.11:8080/blue/organizations/jenkins/dryxPyramid/activity?branch=master"><img alt="http://167.71.135.11:8080/buildStatus/icon?job=dryxPyramid%2Fmaster&amp;subject=build%20master" src="http://167.71.135.11:8080/buildStatus/icon?job=dryxPyramid%2Fmaster&amp;subject=build%20master" /></a>
+<a class="reference external" href="http://167.71.135.11:8080/blue/organizations/jenkins/dryxPyramid/activity?branch=develop"><img alt="http://167.71.135.11:8080/buildStatus/icon?job=dryxPyramid%2Fdevelop&amp;subject=build%20dev" src="http://167.71.135.11:8080/buildStatus/icon?job=dryxPyramid%2Fdevelop&amp;subject=build%20dev" /></a>
 <a class="reference external" href="https://raw.githack.com/thespacedoctor/dryxPyramid/master/htmlcov/index.html"><img alt="https://cdn.jsdelivr.net/gh/thespacedoctor/dryxPyramid&#64;master/coverage.svg" src="https://cdn.jsdelivr.net/gh/thespacedoctor/dryxPyramid&#64;master/coverage.svg" /></a>
 <a class="reference external" href="https://dryxPyramid.readthedocs.io/en/master/"><img alt="https://readthedocs.org/projects/dryxPyramid/badge/?version=master" src="https://readthedocs.org/projects/dryxPyramid/badge/?version=master" /></a>
 <a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/issues?q=is%3Aissue+is%3Aopen+label%3A%22type%3A+bug%22+"><img alt="https://img.shields.io/github/issues/thespacedoctor/dryxPyramid/type:%20bug?label=bug%20issues" src="https://img.shields.io/github/issues/thespacedoctor/dryxPyramid/type:%20bug?label=bug%20issues" /></a></p>
@@ -241,139 +233,39 @@
 <ul class="simple">
 <li><p></p></li>
 </ul>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="install.html#development">Development</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="initialisation.html">Initialisation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="todolist.html">Todo List</a></li>
-<li class="toctree-l1"><a class="reference internal" href="changes_link.html">Release Notes</a></li>
-</ul>
+<div class="highlight-language-eval_rst notranslate"><div class="highlight"><pre><span></span>.. toctree::
+   :maxdepth: 4
+   :caption: Table of Contents
+
+   install
+   initialisation
+   todolist
+   changes_link
+</pre></div>
 </div>
 </div>
 <div class="section" id="api-reference">
 <h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">  ∞</a></h2>
-<div class="toctree-wrapper compound">
+<div class="highlight-language-eval_rst notranslate"><div class="highlight"><pre><span></span>.. toctree::
+   :hidden:
+   :maxdepth: 30
+   :caption: API reference
+
+   autosummary
+</pre></div>
 </div>
-<div class="toctree-wrapper compound">
+<div class="highlight-language-eval_rst notranslate"><div class="highlight"><pre><span></span>.. toctree::
+   :hidden:
+
+   genindex
+</pre></div>
 </div>
-<p><strong>Modules</strong></p>
-<table class="longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.models.html#module-dryxPyramid.models" title="dryxPyramid.models"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.models</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.renderers.html#module-dryxPyramid.renderers" title="dryxPyramid.renderers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.renderers</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.templates.html#module-dryxPyramid.templates" title="dryxPyramid.templates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.templates</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.templates.responses.html#module-dryxPyramid.templates.responses" title="dryxPyramid.templates.responses"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.templates.responses</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.views.html#module-dryxPyramid.views" title="dryxPyramid.views"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.views</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.models.models_base.html#module-dryxPyramid.models.models_base" title="dryxPyramid.models.models_base"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.models.models_base</span></code></a></p></td>
-<td><p><em>The base model for other model modules to build on top of</em></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.models.models_login_post.html#module-dryxPyramid.models.models_login_post" title="dryxPyramid.models.models_login_post"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.models.models_login_post</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.security.html#module-dryxPyramid.security" title="dryxPyramid.security"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.security</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.views.views_base.html#module-dryxPyramid.views.views_base" title="dryxPyramid.views.views_base"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.views.views_base</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.views.views_base_element.html#module-dryxPyramid.views.views_base_element" title="dryxPyramid.views.views_base_element"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.views.views_base_element</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.views.views_download.html#module-dryxPyramid.views.views_download" title="dryxPyramid.views.views_download"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.views.views_download</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.views.views_login.html#module-dryxPyramid.views.views_login" title="dryxPyramid.views.views_login"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.views.views_login</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.views.views_logout.html#module-dryxPyramid.views.views_logout" title="dryxPyramid.views.views_logout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.views.views_logout</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Classes</strong></p>
-<table class="longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.models.models_base.base_model.html#dryxPyramid.models.models_base.base_model" title="dryxPyramid.models.models_base.base_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.models.models_base.base_model</span></code></a></p></td>
-<td><p>A superclass model for pyramid apps</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.models.models_login_post.RootFactory.html#dryxPyramid.models.models_login_post.RootFactory" title="dryxPyramid.models.models_login_post.RootFactory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.models.models_login_post.RootFactory</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.renderers.renderer_csv.html#dryxPyramid.renderers.renderer_csv" title="dryxPyramid.renderers.renderer_csv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.renderers.renderer_csv</span></code></a></p></td>
-<td><p><em>The CSV renderer - can return plain text in browser or a file to download</em></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.renderers.renderer_json.html#dryxPyramid.renderers.renderer_json" title="dryxPyramid.renderers.renderer_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.renderers.renderer_json</span></code></a></p></td>
-<td><p><em>The json renderer - can return content to browser or a file to download</em></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.renderers.renderer_plain_table.html#dryxPyramid.renderers.renderer_plain_table" title="dryxPyramid.renderers.renderer_plain_table"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.renderers.renderer_plain_table</span></code></a></p></td>
-<td><p><em>The plain_table renderer - can return content to browser or a file to download</em></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.renderers.renderer_plain_text.html#dryxPyramid.renderers.renderer_plain_text" title="dryxPyramid.renderers.renderer_plain_text"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.renderers.renderer_plain_text</span></code></a></p></td>
-<td><p><em>The plain_text renderer - can return content to browser or a file to download</em></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.templates.responses.templates_download.html#dryxPyramid.templates.responses.templates_download" title="dryxPyramid.templates.responses.templates_download"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.templates.responses.templates_download</span></code></a></p></td>
-<td><p><em>The worker class for the templates_download module</em></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.templates.responses.templates_login.html#dryxPyramid.templates.responses.templates_login" title="dryxPyramid.templates.responses.templates_login"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.templates.responses.templates_login</span></code></a></p></td>
-<td><p><em>The worker class for the templates_login module</em></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.views.views_base.base_view.html#dryxPyramid.views.views_base.base_view" title="dryxPyramid.views.views_base.base_view"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.views.views_base.base_view</span></code></a></p></td>
-<td><p><em>The base view that can be used for any API resource</em></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.views.views_base_element.base_element_view.html#dryxPyramid.views.views_base_element.base_element_view" title="dryxPyramid.views.views_base_element.base_element_view"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.views.views_base_element.base_element_view</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.views.views_download.download_view.html#dryxPyramid.views.views_download.download_view" title="dryxPyramid.views.views_download.download_view"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.views.views_download.download_view</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.views.views_login.login_view.html#dryxPyramid.views.views_login.login_view" title="dryxPyramid.views.views_login.login_view"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.views.views_login.login_view</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Functions</strong></p>
-<table class="longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.security.get_users_and_groups.html#dryxPyramid.security.get_users_and_groups" title="dryxPyramid.security.get_users_and_groups"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.security.get_users_and_groups</span></code></a></p></td>
-<td><p><em>Get the users and groups from the database</em></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.security.groupfinder.html#dryxPyramid.security.groupfinder" title="dryxPyramid.security.groupfinder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.security.groupfinder</span></code></a></p></td>
-<td><p><em>If the userid exists in the system, it will return a sequence of group identifiers (or an empty sequence if the user isn’t a member of any groups).If the userid does not exist in the system, it will return ``None``.</em>.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.views.views_login.forbidden.html#dryxPyramid.views.views_login.forbidden" title="dryxPyramid.views.views_login.forbidden"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.views.views_login.forbidden</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.views.views_logout.logout.html#dryxPyramid.views.views_logout.logout" title="dryxPyramid.views.views_logout.logout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.views.views_logout.logout</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+<div class="highlight-language-eval_rst notranslate"><div class="highlight"><pre><span></span>.. include:: /autosummary_include.rst
+</pre></div>
+</div>
+<div class="highlight-language-eval_rst notranslate"><div class="highlight"><pre><span></span>.. include:: /genindex.rst
+</pre></div>
+</div>
 </div>
 <div class="section" id="release-notes">
 <h2>Release Notes<a class="headerlink" href="#release-notes" title="Permalink to this headline">  ∞</a></h2>
@@ -393,13 +285,6 @@
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="install.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-    </div>
   
 
   <hr/>

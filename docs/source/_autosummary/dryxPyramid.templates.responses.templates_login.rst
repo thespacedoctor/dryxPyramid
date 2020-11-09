@@ -1,4 +1,4 @@
-templates_login *(class)*
+﻿templates_login *(class)*
 =========================================================
 
 .. currentmodule:: dryxPyramid.templates.responses

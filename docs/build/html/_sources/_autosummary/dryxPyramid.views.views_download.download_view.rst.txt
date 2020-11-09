@@ -1,4 +1,4 @@
-download_view *(class)*
+﻿download_view *(class)*
 ========================================================
 
 .. currentmodule:: dryxPyramid.views.views_download

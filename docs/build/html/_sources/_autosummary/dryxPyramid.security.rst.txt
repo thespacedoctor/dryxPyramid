@@ -1,4 +1,4 @@
- *(module)*
+﻿security *(module)*
 ===============================
 
 
@@ -11,6 +11,12 @@
     :member-order: groupwise
     
     
+    
+    .. rubric:: Classes
+
+    .. autosummary::
+    
+      ~zip
     
     
 
@@ -42,6 +48,8 @@
     
     
     
+    
+    
         
             ~get_users_and_groups (nice)
        
@@ -49,6 +57,11 @@
     
         
             ~groupfinder (nice)
+       
+    
+    
+        
+            ~zip (nice)
        
     
     

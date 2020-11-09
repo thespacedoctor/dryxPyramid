@@ -1,4 +1,4 @@
- *(module)*
+﻿models_login_post *(module)*
 ===============================================
 
 
@@ -17,6 +17,7 @@
     .. autosummary::
     
       ~RootFactory
+      ~object
     
     
 
@@ -54,6 +55,13 @@
     
     
     
+    
+    
+    
+    
+        
+            ~object (nice)
+       
     
     
     
