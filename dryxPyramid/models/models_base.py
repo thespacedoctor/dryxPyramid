@@ -43,9 +43,7 @@ class base_model(object):
         # self.resourceName = "basemodel"
 
         if isinstance(elementId, list):
-            print("  asd")
             self.elementId = (",").join(str(elementId))
-            print(self.elementId)
 
         return None
 

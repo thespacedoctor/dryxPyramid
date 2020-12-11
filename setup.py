@@ -11,14 +11,12 @@ def readme():
 
 install_requires = [
     'pyyaml',
-    'dryxPyramid',
     'fundamentals',
     'pyramid',
     'sqlalchemy',
     'passlib',
     'paste',
     'fundamentals',
-    'mod_wsgi',
     'pymysql',
     'khufu',
     'numpy'
