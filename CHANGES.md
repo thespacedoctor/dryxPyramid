@@ -1,6 +1,10 @@
 
 ## Release Notes
 
+**v0.4.2 - December 11, 2020**
+
+* **FIXED** - doc dependencies
+
 **v0.4.1 - June 24, 2020**
 
 * **enhancements** - added some tweaks for the python 3 version of webapps
