@@ -31,7 +31,7 @@ class renderer_json(JSON):
         self.add_adapter(decimal.Decimal, self.decimal_adapter)
 
         for c in tableColumnNames:
-            if isinstance(info[c], float) or isinstance(info[c], int) or isinstance(info[c], Decimal):
+            if (isinstance(info[c], float) or isinstance(info[c], int) or isinstance(info[c], Decimal)) and not isinstance(info[c], bool):
                 info[c] = float("%0.4f" % info[c])
             elif isinstance(info[c], datetime.datetime):
                 thisDate = str(info[c])[:10]

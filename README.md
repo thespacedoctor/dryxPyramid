@@ -9,8 +9,8 @@
 
 <!-- STATUS BADGES -->  
 
-[![](http://167.99.90.204:8080/buildStatus/icon?job=dryxPyramid%2Fmaster&subject=build%20master)](http://167.99.90.204:8080/blue/organizations/jenkins/dryxPyramid/activity?branch=master)  
-[![](http://167.99.90.204:8080/buildStatus/icon?job=dryxPyramid%2Fdevelop&subject=build%20dev)](http://167.99.90.204:8080/blue/organizations/jenkins/dryxPyramid/activity?branch=develop)  
+[![](http://167.71.135.11:8080/buildStatus/icon?job=dryxPyramid%2Fmaster&subject=build%20master)](http://167.71.135.11:8080/blue/organizations/jenkins/dryxPyramid/activity?branch=master)  
+[![](http://167.71.135.11:8080/buildStatus/icon?job=dryxPyramid%2Fdevelop&subject=build%20dev)](http://167.71.135.11:8080/blue/organizations/jenkins/dryxPyramid/activity?branch=develop)  
 [![](https://cdn.jsdelivr.net/gh/thespacedoctor/dryxPyramid@master/coverage.svg)](https://raw.githack.com/thespacedoctor/dryxPyramid/master/htmlcov/index.html)  
 [![](https://readthedocs.org/projects/dryxPyramid/badge/?version=master)](https://dryxPyramid.readthedocs.io/en/master/)  
 [![](https://img.shields.io/github/issues/thespacedoctor/dryxPyramid/type:%20bug?label=bug%20issues)](https://github.com/thespacedoctor/dryxPyramid/issues?q=is%3Aissue+is%3Aopen+label%3A%22type%3A+bug%22+)  
