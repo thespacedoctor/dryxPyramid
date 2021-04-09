@@ -1,4 +1,4 @@
-﻿renderer_json *(class)*
+renderer_json *(class)*
 =============================================
 
 .. currentmodule:: dryxPyramid.renderers

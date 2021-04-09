@@ -1,4 +1,4 @@
-﻿forbidden (*function*)
+forbidden (*function*)
 ====================================================
 
 .. currentmodule:: dryxPyramid.views.views_login

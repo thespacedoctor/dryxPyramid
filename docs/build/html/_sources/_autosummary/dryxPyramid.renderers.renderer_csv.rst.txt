@@ -1,4 +1,4 @@
-﻿renderer_csv *(class)*
+renderer_csv *(class)*
 ============================================
 
 .. currentmodule:: dryxPyramid.renderers

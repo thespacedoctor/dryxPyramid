@@ -1,4 +1,4 @@
-﻿views_login *(module)*
+views_login *(module)*
 ========================================
 
 

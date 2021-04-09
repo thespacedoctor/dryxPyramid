@@ -34,13 +34,13 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script src="../_static/js/rtd_sphinx_search.min.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script src="../_static/whistles-theme/Contents/Resources/main.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/rtd_sphinx_search.min.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../_static/whistles-theme/Contents/Resources/main.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -265,7 +265,7 @@
 <td><p><em>Get the users and groups from the database</em></p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="dryxPyramid.security.groupfinder.html#dryxPyramid.security.groupfinder" title="dryxPyramid.security.groupfinder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">groupfinder</span></code></a>(userid, request)</p></td>
-<td><p><a href="#id3"><span class="problematic" id="id4">*</span></a>If the userid exists in the system, it will return a sequence of group identifiers (or an empty sequence if the user isn’t a member of any groups).</p></td>
+<td><p><em>If the userid exists in the system, it will return a sequence of group identifiers (or an empty sequence if the user isn’t a member of any groups).If the userid does not exist in the system, it will return ``None``.</em>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -280,22 +280,22 @@
 <td><p><em>Get the users and groups from the database</em></p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="dryxPyramid.security.groupfinder.html#dryxPyramid.security.groupfinder" title="dryxPyramid.security.groupfinder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">groupfinder</span></code></a>(userid, request)</p></td>
-<td><p><a href="#id5"><span class="problematic" id="id6">*</span></a>If the userid exists in the system, it will return a sequence of group identifiers (or an empty sequence if the user isn’t a member of any groups).</p></td>
+<td><p><em>If the userid exists in the system, it will return a sequence of group identifiers (or an empty sequence if the user isn’t a member of any groups).If the userid does not exist in the system, it will return ``None``.</em>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">zip</span></code></p></td>
-<td><p>zip(<a href="#id7"><span class="problematic" id="id8">*</span></a>iterables) –&gt; zip object</p></td>
+<td><p>zip(<a href="#id3"><span class="problematic" id="id4">*</span></a>iterables) –&gt; zip object</p></td>
 </tr>
 </tbody>
 </table>
-<dl class="py function">
+<dl class="function">
 <dt id="dryxPyramid.security.get_users_and_groups">
-<code class="sig-name descname">get_users_and_groups</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/security/get_users_and_groups.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.security.get_users_and_groups" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">get_users_and_groups</code><span class="sig-paren">(</span><em class="sig-param">request</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/security/get_users_and_groups.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.security.get_users_and_groups" title="Permalink to this definition">  ∞</a></dt>
 <dd><p><em>Get the users and groups from the database</em></p>
 </dd></dl>
 
-<dl class="py function">
+<dl class="function">
 <dt id="dryxPyramid.security.groupfinder">
-<code class="sig-name descname">groupfinder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">userid</span></em>, <em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/security/groupfinder.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.security.groupfinder" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">groupfinder</code><span class="sig-paren">(</span><em class="sig-param">userid</em>, <em class="sig-param">request</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/security/groupfinder.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.security.groupfinder" title="Permalink to this definition">  ∞</a></dt>
 <dd><p><em>If the userid exists in the system, it will return a sequence of group identifiers (or an empty sequence if the user isn’t a member of any groups). If the userid does not exist in the system, it will return ``None``.</em></p>
 </dd></dl>
 
@@ -322,7 +322,7 @@
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Dave Young
+        &copy; Copyright 2021, Dave Young
 
     </p>
   </div>

@@ -1,4 +1,4 @@
-﻿views_base *(module)*
+views_base *(module)*
 =======================================
 
 

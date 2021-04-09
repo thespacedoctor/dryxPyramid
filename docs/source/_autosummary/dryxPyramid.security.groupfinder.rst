@@ -1,4 +1,4 @@
-﻿groupfinder (*function*)
+groupfinder (*function*)
 =============================================
 
 .. currentmodule:: dryxPyramid.security

@@ -1,4 +1,4 @@
-﻿base_view *(class)*
+base_view *(class)*
 ================================================
 
 .. currentmodule:: dryxPyramid.views.views_base
