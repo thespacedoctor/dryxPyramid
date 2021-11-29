@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>&lt;no title&gt; &mdash; dryxPyramid v0.4.1 documentation</title>
+  <title>&lt;no title&gt; &mdash; dryxPyramid v0.4.2 documentation</title>
   
 
   
@@ -34,13 +34,13 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script src="_static/js/rtd_sphinx_search.min.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script src="_static/whistles-theme/Contents/Resources/main.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/js/rtd_sphinx_search.min.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="_static/whistles-theme/Contents/Resources/main.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -112,7 +112,7 @@
             
             
               <div class="version">
-                v0.4.1
+                v0.4.2
               </div>
             
           
@@ -141,10 +141,23 @@
               
             
             
-              <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="initialisation.html">Initialisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="todolist.html">Todo List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes_link.html">Release Notes</a></li>
 </ul>
-</div>
+<p class="caption"><span class="caption-text">API reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="autosummary.html">Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="autosummary.html#classes">Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="autosummary.html#functions">Functions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">A-Z Index</a></li>
+</ul>
+
             
           
         </div>
@@ -312,7 +325,7 @@
 <td><p><em>Get the users and groups from the database</em></p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.security.groupfinder.html#dryxPyramid.security.groupfinder" title="dryxPyramid.security.groupfinder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.security.groupfinder</span></code></a></p></td>
-<td><p><a href="#id1"><span class="problematic" id="id2">*</span></a>If the userid exists in the system, it will return a sequence of group identifiers (or an empty sequence if the user isn’t a member of any groups).</p></td>
+<td><p><em>If the userid exists in the system, it will return a sequence of group identifiers (or an empty sequence if the user isn’t a member of any groups).If the userid does not exist in the system, it will return ``None``.</em>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/dryxPyramid.views.views_login.forbidden.html#dryxPyramid.views.views_login.forbidden" title="dryxPyramid.views.views_login.forbidden"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dryxPyramid.views.views_login.forbidden</span></code></a></p></td>
 <td><p></p></td>
@@ -335,7 +348,7 @@
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Dave Young
+        &copy; Copyright 2021, Dave Young
 
     </p>
   </div>

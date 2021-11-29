@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>dryxPyramid.templates.responses.templates_login module &mdash; dryxPyramid v0.4.1 documentation</title>
+  <title>dryxPyramid.templates.responses.templates_login module &mdash; dryxPyramid v0.4.2 documentation</title>
   
 
   
@@ -34,13 +34,13 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script src="../_static/js/rtd_sphinx_search.min.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script src="../_static/whistles-theme/Contents/Resources/main.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/rtd_sphinx_search.min.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../_static/whistles-theme/Contents/Resources/main.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -112,7 +112,7 @@
             
             
               <div class="version">
-                v0.4.1
+                v0.4.2
               </div>
             
           
@@ -141,11 +141,23 @@
               
             
             
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">dryxPyramid.templates.responses.templates_login module</a></li>
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../initialisation.html">Initialisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../todolist.html">Todo List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes_link.html">Release Notes</a></li>
 </ul>
-</div>
+<p class="caption"><span class="caption-text">API reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../autosummary.html">Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../autosummary.html#classes">Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../autosummary.html#functions">Functions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">A-Z Index</a></li>
+</ul>
+
             
           
         </div>
@@ -217,9 +229,9 @@
 <dd class="field-odd"><p>David Young</p>
 </dd>
 </dl>
-<dl class="py class">
+<dl class="class">
 <dt id="dryxPyramid.templates.responses.templates_login.templates_login">
-<em class="property">class </em><code class="sig-name descname">templates_login</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log</span></em>, <em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="n">mainCssFilePath</span><span class="o">=</span><span class="default_value">'main.css'</span></em>, <em class="sig-param"><span class="n">jsFilePath</span><span class="o">=</span><span class="default_value">'main-ck.js'</span></em>, <em class="sig-param"><span class="n">pageTitle</span><span class="o">=</span><span class="default_value">'Login'</span></em>, <em class="sig-param"><span class="n">iconPath</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">came_from</span><span class="o">=</span><span class="default_value">'/'</span></em>, <em class="sig-param"><span class="n">message</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/templates/responses/templates_login/templates_login.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.templates.responses.templates_login.templates_login" title="Permalink to this definition">  ∞</a></dt>
+<em class="property">class </em><code class="sig-name descname">templates_login</code><span class="sig-paren">(</span><em class="sig-param">log</em>, <em class="sig-param">request</em>, <em class="sig-param">mainCssFilePath='main.css'</em>, <em class="sig-param">jsFilePath='main-ck.js'</em>, <em class="sig-param">pageTitle='Login'</em>, <em class="sig-param">iconPath=''</em>, <em class="sig-param">came_from='/'</em>, <em class="sig-param">message=''</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/templates/responses/templates_login/templates_login.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.templates.responses.templates_login.templates_login" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p><em>The worker class for the templates_login module</em></p>
 <p><strong>Key Arguments</strong></p>
@@ -233,12 +245,12 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">came_from</span></code> – the url this login page was triggered from</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">message</span></code> – message to display as notification</p></li>
 </ul>
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.templates.responses.templates_login.templates_login.close">
 <code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/templates/responses/templates_login/templates_login.close.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.templates.responses.templates_login.templates_login.close" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.templates.responses.templates_login.templates_login.get">
 <code class="sig-name descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/templates/responses/templates_login/templates_login.get.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.templates.responses.templates_login.templates_login.get" title="Permalink to this definition">  ∞</a></dt>
 <dd><p><em>get the templates_login object</em></p>
@@ -264,7 +276,7 @@
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Dave Young
+        &copy; Copyright 2021, Dave Young
 
     </p>
   </div>

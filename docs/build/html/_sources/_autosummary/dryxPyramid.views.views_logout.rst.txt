@@ -1,4 +1,4 @@
-﻿views_logout *(module)*
+views_logout *(module)*
 =========================================
 
 

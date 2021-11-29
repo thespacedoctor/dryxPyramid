@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>dryxPyramid.renderers.renderer_json module &mdash; dryxPyramid v0.4.1 documentation</title>
+  <title>dryxPyramid.renderers.renderer_json module &mdash; dryxPyramid v0.4.2 documentation</title>
   
 
   
@@ -34,13 +34,13 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script src="../_static/js/rtd_sphinx_search.min.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script src="../_static/whistles-theme/Contents/Resources/main.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/rtd_sphinx_search.min.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../_static/whistles-theme/Contents/Resources/main.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -112,7 +112,7 @@
             
             
               <div class="version">
-                v0.4.1
+                v0.4.2
               </div>
             
           
@@ -141,11 +141,23 @@
               
             
             
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">dryxPyramid.renderers.renderer_json module</a></li>
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../initialisation.html">Initialisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../todolist.html">Todo List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes_link.html">Release Notes</a></li>
 </ul>
-</div>
+<p class="caption"><span class="caption-text">API reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../autosummary.html">Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../autosummary.html#classes">Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../autosummary.html#functions">Functions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">A-Z Index</a></li>
+</ul>
+
             
           
         </div>
@@ -211,35 +223,35 @@
             
   <div class="section" id="module-dryxPyramid.renderers.renderer_json">
 <span id="dryxpyramid-renderers-renderer-json-module"></span><h1>dryxPyramid.renderers.renderer_json module<a class="headerlink" href="#module-dryxPyramid.renderers.renderer_json" title="Permalink to this headline">  ∞</a></h1>
-<dl class="py class">
+<dl class="class">
 <dt id="dryxPyramid.renderers.renderer_json.renderer_json">
-<em class="property">class </em><code class="sig-name descname">renderer_json</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">info</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/renderers/renderer_json/renderer_json.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.renderers.renderer_json.renderer_json" title="Permalink to this definition">  ∞</a></dt>
+<em class="property">class </em><code class="sig-name descname">renderer_json</code><span class="sig-paren">(</span><em class="sig-param">info</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/renderers/renderer_json/renderer_json.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.renderers.renderer_json.renderer_json" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pyramid.renderers.JSON</span></code></p>
 <p><em>The json renderer - can return content to browser or a file to download</em></p>
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.renderers.renderer_json.renderer_json.datetime_adapter">
-<code class="sig-name descname">datetime_adapter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em>, <em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/renderers/renderer_json/renderer_json.datetime_adapter.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.renderers.renderer_json.renderer_json.datetime_adapter" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">datetime_adapter</code><span class="sig-paren">(</span><em class="sig-param">obj</em>, <em class="sig-param">request</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/renderers/renderer_json/renderer_json.datetime_adapter.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.renderers.renderer_json.renderer_json.datetime_adapter" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.renderers.renderer_json.renderer_json.decimal_adapter">
-<code class="sig-name descname">decimal_adapter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em>, <em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/renderers/renderer_json/renderer_json.decimal_adapter.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.renderers.renderer_json.renderer_json.decimal_adapter" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">decimal_adapter</code><span class="sig-paren">(</span><em class="sig-param">obj</em>, <em class="sig-param">request</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/renderers/renderer_json/renderer_json.decimal_adapter.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.renderers.renderer_json.renderer_json.decimal_adapter" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.renderers.renderer_json.renderer_json._make_default">
-<code class="sig-name descname">_make_default</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/renderers/renderer_json/renderer_json._make_default.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.renderers.renderer_json.renderer_json._make_default" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">_make_default</code><span class="sig-paren">(</span><em class="sig-param">request</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/renderers/renderer_json/renderer_json._make_default.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.renderers.renderer_json.renderer_json._make_default" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.renderers.renderer_json.renderer_json.add_adapter">
-<code class="sig-name descname">add_adapter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">type_or_iface</span></em>, <em class="sig-param"><span class="n">adapter</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/renderers/renderer_json/renderer_json.add_adapter.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.renderers.renderer_json.renderer_json.add_adapter" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">add_adapter</code><span class="sig-paren">(</span><em class="sig-param">type_or_iface</em>, <em class="sig-param">adapter</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/renderers/renderer_json/renderer_json.add_adapter.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.renderers.renderer_json.renderer_json.add_adapter" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>When an object of the type (or interface) <code class="docutils literal notranslate"><span class="pre">type_or_iface</span></code> fails
 to automatically encode using the serializer, the renderer will use
 the adapter <code class="docutils literal notranslate"><span class="pre">adapter</span></code> to convert it into a JSON-serializable
 object.  The adapter must accept two arguments: the object and the
 currently active request.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Foo</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Foo</span><span class="p">:</span>
     <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
 
 <span class="k">def</span> <span class="nf">foo_adapter</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">request</span><span class="p">):</span>
@@ -270,7 +282,7 @@ results.</p>
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Dave Young
+        &copy; Copyright 2021, Dave Young
 
     </p>
   </div>

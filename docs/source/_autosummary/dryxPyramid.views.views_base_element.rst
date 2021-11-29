@@ -1,4 +1,4 @@
-﻿views_base_element *(module)*
+views_base_element *(module)*
 ===============================================
 
 

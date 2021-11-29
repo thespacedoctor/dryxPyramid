@@ -1,4 +1,4 @@
-﻿base_model *(class)*
+base_model *(class)*
 ===================================================
 
 .. currentmodule:: dryxPyramid.models.models_base

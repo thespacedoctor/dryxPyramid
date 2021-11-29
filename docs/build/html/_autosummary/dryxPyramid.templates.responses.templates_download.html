@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>templates_download (class) &mdash; dryxPyramid v0.4.1 documentation</title>
+  <title>templates_download (class) &mdash; dryxPyramid v0.4.2 documentation</title>
   
 
   
@@ -34,19 +34,21 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script src="../_static/js/rtd_sphinx_search.min.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script src="../_static/whistles-theme/Contents/Resources/main.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/rtd_sphinx_search.min.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../_static/whistles-theme/Contents/Resources/main.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="templates_login (class)" href="dryxPyramid.templates.responses.templates_login.html" />
+    <link rel="prev" title="renderer_plain_text (class)" href="dryxPyramid.renderers.renderer_plain_text.html" />
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
           messageStyle: "none",
@@ -112,7 +114,7 @@
             
             
               <div class="version">
-                v0.4.1
+                v0.4.2
               </div>
             
           
@@ -141,11 +143,37 @@
               
             
             
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">templates_download <em>(class)</em></a></li>
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../initialisation.html">Initialisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../todolist.html">Todo List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes_link.html">Release Notes</a></li>
 </ul>
-</div>
+<p class="caption"><span class="caption-text">API reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../autosummary.html">Modules</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../autosummary.html#classes">Classes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.models.models_base.base_model.html">base_model <em>(class)</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.models.models_login_post.RootFactory.html">RootFactory <em>(class)</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.renderers.renderer_csv.html">renderer_csv <em>(class)</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.renderers.renderer_json.html">renderer_json <em>(class)</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.renderers.renderer_plain_table.html">renderer_plain_table <em>(class)</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.renderers.renderer_plain_text.html">renderer_plain_text <em>(class)</em></a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">templates_download <em>(class)</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.templates.responses.templates_login.html">templates_login <em>(class)</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.views.views_base.base_view.html">base_view <em>(class)</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.views.views_base_element.base_element_view.html">base_element_view <em>(class)</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.views.views_download.download_view.html">download_view <em>(class)</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.views.views_login.login_view.html">login_view <em>(class)</em></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../autosummary.html#functions">Functions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">A-Z Index</a></li>
+</ul>
+
             
           
         </div>
@@ -190,6 +218,8 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
+          <li><a href="../autosummary.html">Modules</a> &raquo;</li>
+        
       <li>templates_download <em>(class)</em></li>
     
     
@@ -211,9 +241,9 @@
             
   <div class="section" id="templates-download-class">
 <h1>templates_download <em>(class)</em><a class="headerlink" href="#templates-download-class" title="Permalink to this headline">  ∞</a></h1>
-<dl class="py class">
+<dl class="class">
 <dt id="dryxPyramid.templates.responses.templates_download">
-<em class="property">class </em><code class="sig-name descname">templates_download</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log</span></em>, <em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="n">elementId</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/templates/responses/templates_download.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.templates.responses.templates_download" title="Permalink to this definition">  ∞</a></dt>
+<em class="property">class </em><code class="sig-name descname">templates_download</code><span class="sig-paren">(</span><em class="sig-param">log</em>, <em class="sig-param">request</em>, <em class="sig-param">elementId=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/templates/responses/templates_download.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.templates.responses.templates_download" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p><em>The worker class for the templates_download module</em></p>
 <p><strong>Key Arguments</strong></p>
@@ -237,7 +267,7 @@
 </tr>
 </tbody>
 </table>
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.templates.responses.templates_download.get">
 <code class="sig-name descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/templates/responses/templates_download.get.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.templates.responses.templates_download.get" title="Permalink to this definition">  ∞</a></dt>
 <dd><p><em>get the templates_download object</em></p>
@@ -257,13 +287,22 @@
           </div>
           <footer>
   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="dryxPyramid.templates.responses.templates_login.html" class="btn btn-neutral float-right" title="templates_login (class)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="dryxPyramid.renderers.renderer_plain_text.html" class="btn btn-neutral float-left" title="renderer_plain_text (class)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Dave Young
+        &copy; Copyright 2021, Dave Young
 
     </p>
   </div>

@@ -11,14 +11,12 @@ def readme():
 
 install_requires = [
     'pyyaml',
-    'dryxPyramid',
     'fundamentals',
     'pyramid',
     'sqlalchemy',
     'passlib',
     'paste',
     'fundamentals',
-    'mod_wsgi',
     'pymysql',
     'khufu',
     'numpy'
@@ -44,7 +42,6 @@ setup(name="dryxPyramid",
           'Development Status :: 4 - Beta',
           'License :: OSI Approved :: MIT License',
           'Programming Language :: Python :: 3.7',
-          'Programming Language :: Python :: 2.7',
           'Topic :: Utilities',
       ],
       keywords=['pyramid, webapp'],

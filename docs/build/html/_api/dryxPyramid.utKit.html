@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>dryxPyramid.utKit module &mdash; dryxPyramid v0.4.1 documentation</title>
+  <title>dryxPyramid.utKit module &mdash; dryxPyramid v0.4.2 documentation</title>
   
 
   
@@ -34,13 +34,13 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script src="../_static/js/rtd_sphinx_search.min.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script src="../_static/whistles-theme/Contents/Resources/main.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/rtd_sphinx_search.min.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../_static/whistles-theme/Contents/Resources/main.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -112,7 +112,7 @@
             
             
               <div class="version">
-                v0.4.1
+                v0.4.2
               </div>
             
           
@@ -141,11 +141,23 @@
               
             
             
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">dryxPyramid.utKit module</a></li>
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../initialisation.html">Initialisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../todolist.html">Todo List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes_link.html">Release Notes</a></li>
 </ul>
-</div>
+<p class="caption"><span class="caption-text">API reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../autosummary.html">Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../autosummary.html#classes">Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../autosummary.html#functions">Functions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">A-Z Index</a></li>
+</ul>
+
             
           
         </div>
@@ -212,12 +224,12 @@
   <div class="section" id="module-dryxPyramid.utKit">
 <span id="dryxpyramid-utkit-module"></span><h1>dryxPyramid.utKit module<a class="headerlink" href="#module-dryxPyramid.utKit" title="Permalink to this headline">  ∞</a></h1>
 <p><em>Unit testing tools</em></p>
-<dl class="py class">
+<dl class="class">
 <dt id="dryxPyramid.utKit.utKit">
-<em class="property">class </em><code class="sig-name descname">utKit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">moduleDirectory</span></em>, <em class="sig-param"><span class="n">dbConn</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/utKit.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.utKit" title="Permalink to this definition">  ∞</a></dt>
+<em class="property">class </em><code class="sig-name descname">utKit</code><span class="sig-paren">(</span><em class="sig-param">moduleDirectory</em>, <em class="sig-param">dbConn=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/utKit.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.utKit" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">fundamentals.utKit.utKit</span></code></p>
 <p><em>Override dryx utKit</em></p>
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.utKit.get_project_root">
 <code class="sig-name descname">get_project_root</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/utKit.get_project_root.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.utKit.get_project_root" title="Permalink to this definition">  ∞</a></dt>
 <dd><p><em>Get the root of the ``python`` package - useful for getting files in the root directory of a project</em></p>
@@ -227,13 +239,13 @@
 </ul>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.utKit.refresh_database">
 <code class="sig-name descname">refresh_database</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/utKit.refresh_database.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.utKit.refresh_database" title="Permalink to this definition">  ∞</a></dt>
 <dd><p><em>Refresh the unit test database</em></p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.utKit.setupModule">
 <code class="sig-name descname">setupModule</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/utKit.setupModule.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.utKit.setupModule" title="Permalink to this definition">  ∞</a></dt>
 <dd><p><em>The setupModule method</em></p>
@@ -246,67 +258,101 @@
 </ul>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.utKit.tearDownModule">
 <code class="sig-name descname">tearDownModule</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/utKit.tearDownModule.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.utKit.tearDownModule" title="Permalink to this definition">  ∞</a></dt>
 <dd><p><em>The tearDownModule method</em></p>
+<p><strong>Key Arguments</strong></p>
+<ul class="simple">
+<li></li>
+</ul>
+<p>=</p>
+<p><strong>Return</strong></p>
+<ul class="simple">
+<li><p>None</p></li>
+</ul>
 </dd></dl>
 
 </dd></dl>
 
-<dl class="py function">
+<dl class="function">
 <dt id="dryxPyramid.utKit.db">
-<code class="sig-name descname">db</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/db.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.db" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">db</code><span class="sig-paren">(</span><em class="sig-param">request</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/db.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.db" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py class">
+<dl class="class">
 <dt id="dryxPyramid.utKit.BaseTest">
-<em class="property">class </em><code class="sig-name descname">BaseTest</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest" title="Permalink to this definition">  ∞</a></dt>
+<em class="property">class </em><code class="sig-name descname">BaseTest</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest._addExpectedFailure">
-<code class="sig-name descname">_addExpectedFailure</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">result</span></em>, <em class="sig-param"><span class="n">exc_info</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._addExpectedFailure.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._addExpectedFailure" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">_addExpectedFailure</code><span class="sig-paren">(</span><em class="sig-param">result</em>, <em class="sig-param">exc_info</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._addExpectedFailure.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._addExpectedFailure" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest._addSkip">
-<code class="sig-name descname">_addSkip</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">result</span></em>, <em class="sig-param"><span class="n">test_case</span></em>, <em class="sig-param"><span class="n">reason</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._addSkip.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._addSkip" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">_addSkip</code><span class="sig-paren">(</span><em class="sig-param">result</em>, <em class="sig-param">test_case</em>, <em class="sig-param">reason</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._addSkip.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._addSkip" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest._addUnexpectedSuccess">
-<code class="sig-name descname">_addUnexpectedSuccess</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">result</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._addUnexpectedSuccess.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._addUnexpectedSuccess" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">_addUnexpectedSuccess</code><span class="sig-paren">(</span><em class="sig-param">result</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._addUnexpectedSuccess.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._addUnexpectedSuccess" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest._baseAssertEqual">
-<code class="sig-name descname">_baseAssertEqual</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">first</span></em>, <em class="sig-param"><span class="n">second</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._baseAssertEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._baseAssertEqual" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">_baseAssertEqual</code><span class="sig-paren">(</span><em class="sig-param">first</em>, <em class="sig-param">second</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._baseAssertEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._baseAssertEqual" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>The default assertEqual implementation, not type specific.</p>
 </dd></dl>
 
-<dl class="py attribute">
+<dl class="method">
+<dt id="dryxPyramid.utKit.BaseTest._callCleanup">
+<code class="sig-name descname">_callCleanup</code><span class="sig-paren">(</span><em class="sig-param">function</em>, <em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._callCleanup.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._callCleanup" title="Permalink to this definition">  ∞</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="dryxPyramid.utKit.BaseTest._callSetUp">
+<code class="sig-name descname">_callSetUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._callSetUp.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._callSetUp" title="Permalink to this definition">  ∞</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="dryxPyramid.utKit.BaseTest._callTearDown">
+<code class="sig-name descname">_callTearDown</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._callTearDown.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._callTearDown" title="Permalink to this definition">  ∞</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="dryxPyramid.utKit.BaseTest._callTestMethod">
+<code class="sig-name descname">_callTestMethod</code><span class="sig-paren">(</span><em class="sig-param">method</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._callTestMethod.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._callTestMethod" title="Permalink to this definition">  ∞</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
 <dt id="dryxPyramid.utKit.BaseTest._classSetupFailed">
 <code class="sig-name descname">_classSetupFailed</code><em class="property"> = False</em><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._classSetupFailed.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._classSetupFailed" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="attribute">
+<dt id="dryxPyramid.utKit.BaseTest._class_cleanups">
+<code class="sig-name descname">_class_cleanups</code><em class="property"> = []</em><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._class_cleanups.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._class_cleanups" title="Permalink to this definition">  ∞</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest._deprecate">
 <code class="sig-name descname">_deprecate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._deprecate.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._deprecate" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py attribute">
+<dl class="attribute">
 <dt id="dryxPyramid.utKit.BaseTest._diffThreshold">
 <code class="sig-name descname">_diffThreshold</code><em class="property"> = 65536</em><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._diffThreshold.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._diffThreshold" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest._feedErrorsToResult">
-<code class="sig-name descname">_feedErrorsToResult</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">result</span></em>, <em class="sig-param"><span class="n">errors</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._feedErrorsToResult.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._feedErrorsToResult" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">_feedErrorsToResult</code><span class="sig-paren">(</span><em class="sig-param">result</em>, <em class="sig-param">errors</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._feedErrorsToResult.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._feedErrorsToResult" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest._formatMessage">
-<code class="sig-name descname">_formatMessage</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">msg</span></em>, <em class="sig-param"><span class="n">standardMsg</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._formatMessage.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._formatMessage" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">_formatMessage</code><span class="sig-paren">(</span><em class="sig-param">msg</em>, <em class="sig-param">standardMsg</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._formatMessage.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._formatMessage" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Honour the longMessage attribute when generating failure messages.
 If longMessage is False this means:</p>
 <ul class="simple">
@@ -320,32 +366,39 @@ If longMessage is False this means:</p>
 </ul>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest._getAssertEqualityFunc">
-<code class="sig-name descname">_getAssertEqualityFunc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">first</span></em>, <em class="sig-param"><span class="n">second</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._getAssertEqualityFunc.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._getAssertEqualityFunc" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">_getAssertEqualityFunc</code><span class="sig-paren">(</span><em class="sig-param">first</em>, <em class="sig-param">second</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._getAssertEqualityFunc.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._getAssertEqualityFunc" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Get a detailed comparison function for the types of the two args.</p>
 <p>Returns: A callable accepting (first, second, msg=None) that will
 raise a failure exception if first != second with a useful human
 readable error message for those types.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest._truncateMessage">
-<code class="sig-name descname">_truncateMessage</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span></em>, <em class="sig-param"><span class="n">diff</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._truncateMessage.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._truncateMessage" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">_truncateMessage</code><span class="sig-paren">(</span><em class="sig-param">message</em>, <em class="sig-param">diff</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest._truncateMessage.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest._truncateMessage" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
+<dt id="dryxPyramid.utKit.BaseTest.addClassCleanup">
+<em class="property">classmethod </em><code class="sig-name descname">addClassCleanup</code><span class="sig-paren">(</span><em class="sig-param">function</em>, <em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.addClassCleanup.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.addClassCleanup" title="Permalink to this definition">  ∞</a></dt>
+<dd><p>Same as addCleanup, except the cleanup items are called even if
+setUpClass fails (unlike tearDownClass).</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.addCleanup">
-<code class="sig-name descname">addCleanup</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.addCleanup.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.addCleanup" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">addCleanup</code><span class="sig-paren">(</span><em class="sig-param">function</em>, <em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.addCleanup.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.addCleanup" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Add a function, with arguments, to be called when the test is
 completed. Functions added are called on a LIFO basis and are
 called after tearDown on test failure or success.</p>
 <p>Cleanup items are called even if setUp fails (unlike tearDown).</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.addTypeEqualityFunc">
-<code class="sig-name descname">addTypeEqualityFunc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">typeobj</span></em>, <em class="sig-param"><span class="n">function</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.addTypeEqualityFunc.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.addTypeEqualityFunc" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">addTypeEqualityFunc</code><span class="sig-paren">(</span><em class="sig-param">typeobj</em>, <em class="sig-param">function</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.addTypeEqualityFunc.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.addTypeEqualityFunc" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Add a type specific assertEqual style function to compare a type.</p>
 <p>This method is for use by TestCase subclasses that need to register
 their own type equality functions to provide nicer error messages.</p>
@@ -361,9 +414,9 @@ useful error message when the two arguments are not equal.</p>
 </dl>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertAlmostEqual">
-<code class="sig-name descname">assertAlmostEqual</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">first</span></em>, <em class="sig-param"><span class="n">second</span></em>, <em class="sig-param"><span class="n">places</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">delta</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertAlmostEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertAlmostEqual" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertAlmostEqual</code><span class="sig-paren">(</span><em class="sig-param">first</em>, <em class="sig-param">second</em>, <em class="sig-param">places=None</em>, <em class="sig-param">msg=None</em>, <em class="sig-param">delta=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertAlmostEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertAlmostEqual" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Fail if the two objects are unequal as determined by their
 difference rounded to the given number of decimal places
 (default 7) and comparing to zero, or by comparing that the
@@ -375,17 +428,16 @@ as significant digits (measured from the most significant digit).</p>
 compare almost equal.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertAlmostEquals">
-<code class="sig-name descname">assertAlmostEquals</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertAlmostEquals.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertAlmostEquals" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertAlmostEquals</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertAlmostEquals.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertAlmostEquals" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertCountEqual">
-<code class="sig-name descname">assertCountEqual</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">first</span></em>, <em class="sig-param"><span class="n">second</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertCountEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertCountEqual" title="Permalink to this definition">  ∞</a></dt>
-<dd><p>An unordered sequence comparison asserting that the same elements,
-regardless of order.  If the same element occurs more than once,
-it verifies that the elements occur the same number of times.</p>
+<code class="sig-name descname">assertCountEqual</code><span class="sig-paren">(</span><em class="sig-param">first</em>, <em class="sig-param">second</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertCountEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertCountEqual" title="Permalink to this definition">  ∞</a></dt>
+<dd><p>Asserts that two iterables have the same elements, the same number of
+times, without regard to order.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">Counter</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">first</span><span class="p">)),</span>
                    <span class="n">Counter</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">second</span><span class="p">)))</span>
 
@@ -399,99 +451,99 @@ it verifies that the elements occur the same number of times.</p>
 </div>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertDictContainsSubset">
-<code class="sig-name descname">assertDictContainsSubset</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">subset</span></em>, <em class="sig-param"><span class="n">dictionary</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertDictContainsSubset.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertDictContainsSubset" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertDictContainsSubset</code><span class="sig-paren">(</span><em class="sig-param">subset</em>, <em class="sig-param">dictionary</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertDictContainsSubset.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertDictContainsSubset" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Checks whether dictionary is a superset of subset.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertDictEqual">
-<code class="sig-name descname">assertDictEqual</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">d1</span></em>, <em class="sig-param"><span class="n">d2</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertDictEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertDictEqual" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertDictEqual</code><span class="sig-paren">(</span><em class="sig-param">d1</em>, <em class="sig-param">d2</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertDictEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertDictEqual" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertEqual">
-<code class="sig-name descname">assertEqual</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">first</span></em>, <em class="sig-param"><span class="n">second</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertEqual" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertEqual</code><span class="sig-paren">(</span><em class="sig-param">first</em>, <em class="sig-param">second</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertEqual" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Fail if the two objects are unequal as determined by the ‘==’
 operator.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertEquals">
-<code class="sig-name descname">assertEquals</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertEquals.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertEquals" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertEquals</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertEquals.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertEquals" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertFalse">
-<code class="sig-name descname">assertFalse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">expr</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertFalse.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertFalse" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertFalse</code><span class="sig-paren">(</span><em class="sig-param">expr</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertFalse.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertFalse" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Check that the expression is false.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertGreater">
-<code class="sig-name descname">assertGreater</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertGreater.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertGreater" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertGreater</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertGreater.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertGreater" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Just like self.assertTrue(a &gt; b), but with a nicer default message.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertGreaterEqual">
-<code class="sig-name descname">assertGreaterEqual</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertGreaterEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertGreaterEqual" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertGreaterEqual</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertGreaterEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertGreaterEqual" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Just like self.assertTrue(a &gt;= b), but with a nicer default message.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertIn">
-<code class="sig-name descname">assertIn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">member</span></em>, <em class="sig-param"><span class="n">container</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertIn.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertIn" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertIn</code><span class="sig-paren">(</span><em class="sig-param">member</em>, <em class="sig-param">container</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertIn.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertIn" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Just like self.assertTrue(a in b), but with a nicer default message.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertIs">
-<code class="sig-name descname">assertIs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">expr1</span></em>, <em class="sig-param"><span class="n">expr2</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertIs.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertIs" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertIs</code><span class="sig-paren">(</span><em class="sig-param">expr1</em>, <em class="sig-param">expr2</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertIs.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertIs" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Just like self.assertTrue(a is b), but with a nicer default message.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertIsInstance">
-<code class="sig-name descname">assertIsInstance</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em>, <em class="sig-param"><span class="n">cls</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertIsInstance.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertIsInstance" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertIsInstance</code><span class="sig-paren">(</span><em class="sig-param">obj</em>, <em class="sig-param">cls</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertIsInstance.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertIsInstance" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Same as self.assertTrue(isinstance(obj, cls)), with a nicer
 default message.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertIsNone">
-<code class="sig-name descname">assertIsNone</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertIsNone.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertIsNone" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertIsNone</code><span class="sig-paren">(</span><em class="sig-param">obj</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertIsNone.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertIsNone" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Same as self.assertTrue(obj is None), with a nicer default message.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertIsNot">
-<code class="sig-name descname">assertIsNot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">expr1</span></em>, <em class="sig-param"><span class="n">expr2</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertIsNot.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertIsNot" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertIsNot</code><span class="sig-paren">(</span><em class="sig-param">expr1</em>, <em class="sig-param">expr2</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertIsNot.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertIsNot" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Just like self.assertTrue(a is not b), but with a nicer default message.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertIsNotNone">
-<code class="sig-name descname">assertIsNotNone</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertIsNotNone.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertIsNotNone" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertIsNotNone</code><span class="sig-paren">(</span><em class="sig-param">obj</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertIsNotNone.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertIsNotNone" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Included for symmetry with assertIsNone.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertLess">
-<code class="sig-name descname">assertLess</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertLess.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertLess" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertLess</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertLess.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertLess" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Just like self.assertTrue(a &lt; b), but with a nicer default message.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertLessEqual">
-<code class="sig-name descname">assertLessEqual</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertLessEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertLessEqual" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertLessEqual</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertLessEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertLessEqual" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Just like self.assertTrue(a &lt;= b), but with a nicer default message.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertListEqual">
-<code class="sig-name descname">assertListEqual</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">list1</span></em>, <em class="sig-param"><span class="n">list2</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertListEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertListEqual" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertListEqual</code><span class="sig-paren">(</span><em class="sig-param">list1</em>, <em class="sig-param">list2</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertListEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertListEqual" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>A list-specific equality assertion.</p>
 <dl>
 <dt>Args:</dt><dd><p>list1: The first list to compare.
@@ -504,9 +556,9 @@ msg: Optional message to use on failure instead of a list of</p>
 </dl>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertLogs">
-<code class="sig-name descname">assertLogs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">logger</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">level</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertLogs.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertLogs" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertLogs</code><span class="sig-paren">(</span><em class="sig-param">logger=None</em>, <em class="sig-param">level=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertLogs.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertLogs" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Fail unless a log message of level <em>level</em> or higher is emitted
 on <em>logger_name</em> or its children.  If omitted, <em>level</em> defaults to
 INFO and <em>logger</em> defaults to the root logger.</p>
@@ -526,15 +578,15 @@ objects.</p>
 </div>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertMultiLineEqual">
-<code class="sig-name descname">assertMultiLineEqual</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">first</span></em>, <em class="sig-param"><span class="n">second</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertMultiLineEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertMultiLineEqual" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertMultiLineEqual</code><span class="sig-paren">(</span><em class="sig-param">first</em>, <em class="sig-param">second</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertMultiLineEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertMultiLineEqual" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Assert that two multi-line strings are equal.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertNotAlmostEqual">
-<code class="sig-name descname">assertNotAlmostEqual</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">first</span></em>, <em class="sig-param"><span class="n">second</span></em>, <em class="sig-param"><span class="n">places</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">delta</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertNotAlmostEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertNotAlmostEqual" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertNotAlmostEqual</code><span class="sig-paren">(</span><em class="sig-param">first</em>, <em class="sig-param">second</em>, <em class="sig-param">places=None</em>, <em class="sig-param">msg=None</em>, <em class="sig-param">delta=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertNotAlmostEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertNotAlmostEqual" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Fail if the two objects are equal as determined by their
 difference rounded to the given number of decimal places
 (default 7) and comparing to zero, or by comparing that the
@@ -544,49 +596,49 @@ as significant digits (measured from the most significant digit).</p>
 <p>Objects that are equal automatically fail.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertNotAlmostEquals">
-<code class="sig-name descname">assertNotAlmostEquals</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertNotAlmostEquals.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertNotAlmostEquals" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertNotAlmostEquals</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertNotAlmostEquals.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertNotAlmostEquals" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertNotEqual">
-<code class="sig-name descname">assertNotEqual</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">first</span></em>, <em class="sig-param"><span class="n">second</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertNotEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertNotEqual" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertNotEqual</code><span class="sig-paren">(</span><em class="sig-param">first</em>, <em class="sig-param">second</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertNotEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertNotEqual" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Fail if the two objects are equal as determined by the ‘!=’
 operator.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertNotEquals">
-<code class="sig-name descname">assertNotEquals</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertNotEquals.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertNotEquals" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertNotEquals</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertNotEquals.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertNotEquals" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertNotIn">
-<code class="sig-name descname">assertNotIn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">member</span></em>, <em class="sig-param"><span class="n">container</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertNotIn.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertNotIn" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertNotIn</code><span class="sig-paren">(</span><em class="sig-param">member</em>, <em class="sig-param">container</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertNotIn.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertNotIn" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Just like self.assertTrue(a not in b), but with a nicer default message.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertNotIsInstance">
-<code class="sig-name descname">assertNotIsInstance</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em>, <em class="sig-param"><span class="n">cls</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertNotIsInstance.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertNotIsInstance" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertNotIsInstance</code><span class="sig-paren">(</span><em class="sig-param">obj</em>, <em class="sig-param">cls</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertNotIsInstance.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertNotIsInstance" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Included for symmetry with assertIsInstance.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertNotRegex">
-<code class="sig-name descname">assertNotRegex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">unexpected_regex</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertNotRegex.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertNotRegex" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertNotRegex</code><span class="sig-paren">(</span><em class="sig-param">text</em>, <em class="sig-param">unexpected_regex</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertNotRegex.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertNotRegex" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Fail the test if the text matches the regular expression.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertNotRegexpMatches">
-<code class="sig-name descname">assertNotRegexpMatches</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertNotRegexpMatches.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertNotRegexpMatches" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertNotRegexpMatches</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertNotRegexpMatches.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertNotRegexpMatches" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertRaises">
-<code class="sig-name descname">assertRaises</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">expected_exception</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertRaises.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertRaises" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertRaises</code><span class="sig-paren">(</span><em class="sig-param">expected_exception</em>, <em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertRaises.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertRaises" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Fail unless an exception of class expected_exception is raised
 by the callable when invoked with specified positional and
 keyword arguments. If a different type of exception is
@@ -612,9 +664,9 @@ exception after the assertion:</p>
 </div>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertRaisesRegex">
-<code class="sig-name descname">assertRaisesRegex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">expected_exception</span></em>, <em class="sig-param"><span class="n">expected_regex</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertRaisesRegex.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertRaisesRegex" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertRaisesRegex</code><span class="sig-paren">(</span><em class="sig-param">expected_exception</em>, <em class="sig-param">expected_regex</em>, <em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertRaisesRegex.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertRaisesRegex" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Asserts that the message in a raised exception matches a regex.</p>
 <dl>
 <dt>Args:</dt><dd><p>expected_exception: Exception class expected to be raised.
@@ -632,25 +684,25 @@ msg: Optional message used in case of failure. Can only be used</p>
 </dl>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertRaisesRegexp">
-<code class="sig-name descname">assertRaisesRegexp</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertRaisesRegexp.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertRaisesRegexp" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertRaisesRegexp</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertRaisesRegexp.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertRaisesRegexp" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertRegex">
-<code class="sig-name descname">assertRegex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">expected_regex</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertRegex.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertRegex" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertRegex</code><span class="sig-paren">(</span><em class="sig-param">text</em>, <em class="sig-param">expected_regex</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertRegex.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertRegex" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Fail the test unless the text matches the regular expression.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertRegexpMatches">
-<code class="sig-name descname">assertRegexpMatches</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertRegexpMatches.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertRegexpMatches" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertRegexpMatches</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertRegexpMatches.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertRegexpMatches" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertSequenceEqual">
-<code class="sig-name descname">assertSequenceEqual</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">seq1</span></em>, <em class="sig-param"><span class="n">seq2</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">seq_type</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertSequenceEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertSequenceEqual" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertSequenceEqual</code><span class="sig-paren">(</span><em class="sig-param">seq1</em>, <em class="sig-param">seq2</em>, <em class="sig-param">msg=None</em>, <em class="sig-param">seq_type=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertSequenceEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertSequenceEqual" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>An equality assertion for ordered sequences (like lists and tuples).</p>
 <p>For the purposes of this function, a valid ordered sequence type is one
 which can be indexed, has a length, and has an equality operator.</p>
@@ -669,9 +721,9 @@ seq_type: The expected datatype of the sequences, or None if no</p>
 </dl>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertSetEqual">
-<code class="sig-name descname">assertSetEqual</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">set1</span></em>, <em class="sig-param"><span class="n">set2</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertSetEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertSetEqual" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertSetEqual</code><span class="sig-paren">(</span><em class="sig-param">set1</em>, <em class="sig-param">set2</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertSetEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertSetEqual" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>A set-specific equality assertion.</p>
 <dl>
 <dt>Args:</dt><dd><p>set1: The first set to compare.
@@ -687,15 +739,15 @@ is optimized for sets specifically (parameters must support a
 difference method).</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertTrue">
-<code class="sig-name descname">assertTrue</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">expr</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertTrue.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertTrue" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertTrue</code><span class="sig-paren">(</span><em class="sig-param">expr</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertTrue.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertTrue" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Check that the expression is true.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertTupleEqual">
-<code class="sig-name descname">assertTupleEqual</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tuple1</span></em>, <em class="sig-param"><span class="n">tuple2</span></em>, <em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertTupleEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertTupleEqual" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertTupleEqual</code><span class="sig-paren">(</span><em class="sig-param">tuple1</em>, <em class="sig-param">tuple2</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertTupleEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertTupleEqual" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>A tuple-specific equality assertion.</p>
 <dl>
 <dt>Args:</dt><dd><p>tuple1: The first tuple to compare.
@@ -708,9 +760,9 @@ msg: Optional message to use on failure instead of a list of</p>
 </dl>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertWarns">
-<code class="sig-name descname">assertWarns</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">expected_warning</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertWarns.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertWarns" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertWarns</code><span class="sig-paren">(</span><em class="sig-param">expected_warning</em>, <em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertWarns.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertWarns" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Fail unless a warning of class warnClass is triggered
 by the callable when invoked with specified positional and
 keyword arguments.  If a different type of warning is
@@ -738,9 +790,9 @@ This allows you to inspect the warning after the assertion:</p>
 </div>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assertWarnsRegex">
-<code class="sig-name descname">assertWarnsRegex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">expected_warning</span></em>, <em class="sig-param"><span class="n">expected_regex</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertWarnsRegex.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertWarnsRegex" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assertWarnsRegex</code><span class="sig-paren">(</span><em class="sig-param">expected_warning</em>, <em class="sig-param">expected_regex</em>, <em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assertWarnsRegex.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assertWarnsRegex" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Asserts that the message in a triggered warning matches a regexp.
 Basic functioning is similar to assertWarns() with the addition
 that only warnings whose messages also match the regular expression
@@ -761,114 +813,121 @@ msg: Optional message used in case of failure. Can only be used</p>
 </dl>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.assert_">
-<code class="sig-name descname">assert_</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assert_.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assert_" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">assert_</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.assert_.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.assert_" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.countTestCases">
 <code class="sig-name descname">countTestCases</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.countTestCases.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.countTestCases" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.debug">
 <code class="sig-name descname">debug</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.debug.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.debug" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Run the test without collecting errors in a TestResult</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.defaultTestResult">
 <code class="sig-name descname">defaultTestResult</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.defaultTestResult.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.defaultTestResult" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
+<dt id="dryxPyramid.utKit.BaseTest.doClassCleanups">
+<em class="property">classmethod </em><code class="sig-name descname">doClassCleanups</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.doClassCleanups.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.doClassCleanups" title="Permalink to this definition">  ∞</a></dt>
+<dd><p>Execute all class cleanup functions. Normally called for you after
+tearDownClass.</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.doCleanups">
 <code class="sig-name descname">doCleanups</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.doCleanups.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.doCleanups" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Execute all cleanup functions. Normally called for you after
 tearDown.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.fail">
-<code class="sig-name descname">fail</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">msg</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.fail.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.fail" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">fail</code><span class="sig-paren">(</span><em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.fail.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.fail" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Fail immediately, with the given message.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.failIf">
-<code class="sig-name descname">failIf</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.failIf.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.failIf" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">failIf</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.failIf.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.failIf" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.failIfAlmostEqual">
-<code class="sig-name descname">failIfAlmostEqual</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.failIfAlmostEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.failIfAlmostEqual" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">failIfAlmostEqual</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.failIfAlmostEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.failIfAlmostEqual" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.failIfEqual">
-<code class="sig-name descname">failIfEqual</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.failIfEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.failIfEqual" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">failIfEqual</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.failIfEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.failIfEqual" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.failUnless">
-<code class="sig-name descname">failUnless</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.failUnless.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.failUnless" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">failUnless</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.failUnless.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.failUnless" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.failUnlessAlmostEqual">
-<code class="sig-name descname">failUnlessAlmostEqual</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.failUnlessAlmostEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.failUnlessAlmostEqual" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">failUnlessAlmostEqual</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.failUnlessAlmostEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.failUnlessAlmostEqual" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.failUnlessEqual">
-<code class="sig-name descname">failUnlessEqual</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.failUnlessEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.failUnlessEqual" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">failUnlessEqual</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.failUnlessEqual.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.failUnlessEqual" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.failUnlessRaises">
-<code class="sig-name descname">failUnlessRaises</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.failUnlessRaises.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.failUnlessRaises" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">failUnlessRaises</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.failUnlessRaises.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.failUnlessRaises" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py attribute">
+<dl class="attribute">
 <dt id="dryxPyramid.utKit.BaseTest.failureException">
 <code class="sig-name descname">failureException</code><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.failureException.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.failureException" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">builtins.AssertionError</span></code></p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.id">
 <code class="sig-name descname">id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.id.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.id" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py attribute">
+<dl class="attribute">
 <dt id="dryxPyramid.utKit.BaseTest.longMessage">
 <code class="sig-name descname">longMessage</code><em class="property"> = True</em><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.longMessage.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.longMessage" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py attribute">
+<dl class="attribute">
 <dt id="dryxPyramid.utKit.BaseTest.maxDiff">
 <code class="sig-name descname">maxDiff</code><em class="property"> = 640</em><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.maxDiff.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.maxDiff" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.run">
-<code class="sig-name descname">run</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">result</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.run.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.run" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><em class="sig-param">result=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.run.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.run" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.setUp">
 <code class="sig-name descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.setUp.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.setUp" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>This is the default setup method for pyramid unit tests. It will instantiate a database connection to the unit_tesing database on localhost</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.setUpClass">
 <em class="property">classmethod </em><code class="sig-name descname">setUpClass</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.setUpClass.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.setUpClass" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Hook method for setting up class fixture before running tests in the class.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.shortDescription">
 <code class="sig-name descname">shortDescription</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.shortDescription.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.shortDescription" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Returns a one-line description of the test, or None if no
@@ -877,13 +936,13 @@ description has been provided.</p>
 the specified test method’s docstring.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.skipTest">
-<code class="sig-name descname">skipTest</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">reason</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.skipTest.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.skipTest" title="Permalink to this definition">  ∞</a></dt>
+<code class="sig-name descname">skipTest</code><span class="sig-paren">(</span><em class="sig-param">reason</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.skipTest.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.skipTest" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Skip this test.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.subTest">
 <code class="sig-name descname">subTest</code><span class="sig-paren">(</span><em class="sig-param">msg=&lt;object object&gt;</em>, <em class="sig-param">**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.subTest.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.subTest" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Return a context manager that will return the enclosed block
@@ -893,13 +952,13 @@ case as failed but resumes execution at the end of the enclosed
 block, allowing further test code to be executed.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.tearDownClass">
 <em class="property">classmethod </em><code class="sig-name descname">tearDownClass</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.tearDownClass.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.tearDownClass" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Hook method for deconstructing the class fixture after running all tests in the class.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.utKit.BaseTest.tearDown">
 <code class="sig-name descname">tearDown</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/utKit/BaseTest.tearDown.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.utKit.BaseTest.tearDown" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Hook method for deconstructing the test fixture after testing it.</p>
@@ -921,7 +980,7 @@ block, allowing further test code to be executed.</p>
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Dave Young
+        &copy; Copyright 2021, Dave Young
 
     </p>
   </div>

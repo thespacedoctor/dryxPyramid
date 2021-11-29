@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>models_base (module) &mdash; dryxPyramid v0.4.1 documentation</title>
+  <title>models_base (module) &mdash; dryxPyramid v0.4.2 documentation</title>
   
 
   
@@ -34,19 +34,21 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script src="../_static/js/rtd_sphinx_search.min.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script src="../_static/whistles-theme/Contents/Resources/main.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/rtd_sphinx_search.min.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../_static/whistles-theme/Contents/Resources/main.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="models_login_post (module)" href="dryxPyramid.models.models_login_post.html" />
+    <link rel="prev" title="views (module)" href="dryxPyramid.views.html" />
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
           messageStyle: "none",
@@ -112,7 +114,7 @@
             
             
               <div class="version">
-                v0.4.1
+                v0.4.2
               </div>
             
           
@@ -141,11 +143,38 @@
               
             
             
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">models_base <em>(module)</em></a></li>
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../initialisation.html">Initialisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../todolist.html">Todo List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes_link.html">Release Notes</a></li>
 </ul>
-</div>
+<p class="caption"><span class="caption-text">API reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../autosummary.html">Modules</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.models.html">models <em>(module)</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.renderers.html">renderers <em>(module)</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.templates.html">templates <em>(module)</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.templates.responses.html">responses <em>(module)</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.views.html">views <em>(module)</em></a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">models_base <em>(module)</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.models.models_login_post.html">models_login_post <em>(module)</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.security.html">security <em>(module)</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.views.views_base.html">views_base <em>(module)</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.views.views_base_element.html">views_base_element <em>(module)</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.views.views_download.html">views_download <em>(module)</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.views.views_login.html">views_login <em>(module)</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="dryxPyramid.views.views_logout.html">views_logout <em>(module)</em></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../autosummary.html#classes">Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../autosummary.html#functions">Functions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">A-Z Index</a></li>
+</ul>
+
             
           
         </div>
@@ -190,6 +219,8 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
+          <li><a href="../autosummary.html">Modules</a> &raquo;</li>
+        
       <li>models_base <em>(module)</em></li>
     
     
@@ -227,8 +258,8 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="dryxPyramid.models.models_base.base_model.html#dryxPyramid.models.models_base.base_model" title="dryxPyramid.models.models_base.base_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">base_model</span></code></a>(log, request[, elementId, search])</p></td>
 <td><p>A superclass model for pyramid apps</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code>()</p></td>
-<td><p>The most base type</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></p></td>
+<td><p>The base class of the class hierarchy.</p></td>
 </tr>
 </tbody>
 </table>
@@ -242,8 +273,8 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="dryxPyramid.models.models_base.base_model.html#dryxPyramid.models.models_base.base_model" title="dryxPyramid.models.models_base.base_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">base_model</span></code></a>(log, request[, elementId, search])</p></td>
 <td><p>A superclass model for pyramid apps</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code>()</p></td>
-<td><p>The most base type</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></p></td>
+<td><p>The base class of the class hierarchy.</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">os</span></code></p></td>
 <td><p>OS routines for NT or Posix depending on what system we’re on.</p></td>
@@ -253,9 +284,9 @@
 </tr>
 </tbody>
 </table>
-<dl class="py class">
+<dl class="class">
 <dt id="dryxPyramid.models.models_base.base_model">
-<em class="property">class </em><code class="sig-name descname">base_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">log</span></em>, <em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="n">elementId</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">search</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/models/models_base/base_model.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.models.models_base.base_model" title="Permalink to this definition">  ∞</a></dt>
+<em class="property">class </em><code class="sig-name descname">base_model</code><span class="sig-paren">(</span><em class="sig-param">log</em>, <em class="sig-param">request</em>, <em class="sig-param">elementId=False</em>, <em class="sig-param">search=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/models/models_base/base_model.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.models.models_base.base_model" title="Permalink to this definition">  ∞</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>A superclass model for pyramid apps</p>
 <dl class="simple">
@@ -267,7 +298,7 @@
 </ul>
 </dd>
 </dl>
-<dl class="py method">
+<dl class="method">
 <dt id="dryxPyramid.models.models_base.base_model.close">
 <code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/thespacedoctor/dryxPyramid/tree/master/dryxPyramid/models/models_base/base_model.close.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dryxPyramid.models.models_base.base_model.close" title="Permalink to this definition">  ∞</a></dt>
 <dd></dd></dl>
@@ -282,13 +313,22 @@
           </div>
           <footer>
   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="dryxPyramid.models.models_login_post.html" class="btn btn-neutral float-right" title="models_login_post (module)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="dryxPyramid.views.html" class="btn btn-neutral float-left" title="views (module)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Dave Young
+        &copy; Copyright 2021, Dave Young
 
     </p>
   </div>

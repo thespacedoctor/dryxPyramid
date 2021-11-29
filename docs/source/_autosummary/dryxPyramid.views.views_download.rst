@@ -1,4 +1,4 @@
-﻿views_download *(module)*
+views_download *(module)*
 ===========================================
 
 
