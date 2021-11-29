@@ -43,9 +43,7 @@ class base_model(object):
         # self.resourceName = "basemodel"
 
         if isinstance(elementId, list):
-            print("  asd")
             self.elementId = (",").join(str(elementId))
-            print(self.elementId)
 
         return None
 
@@ -66,6 +64,8 @@ class base_model(object):
         #     self.request.host)[1].split("?")[0]
         # requestRoute = self.request.url.split(
         #     self.request.host)[1].split("?")[0]
+        # print(refererRoute)
+        # print(requestRoute)
 
         defaultQs = {
             "format": None,
@@ -83,7 +83,20 @@ class base_model(object):
 
         # NOW OVERRIDE THESE DEFAULTS IF NEEDED
         for k, v in self.defaultQs.items():
+            if isinstance(v, str):
+                if v.lower == "false":
+                    v = False
+                elif v.lower == "true":
+                    v = True
             defaultQs[k] = v
+
+        # FIX TRUE AND FALSE
+        for k, v in self.qs.items():
+            if isinstance(v, str):
+                if v.lower in ["false"]:
+                    self.qs[k] = False
+                elif v and v.lower in ["true"]:
+                    self.qs[k] = True
 
         # ADD DEFAULTS TO THIS REQUEST - CLEAR OUR PARAMETERS COMING FROM A
         # NON-RELATED RESOURCE/ROUTE
