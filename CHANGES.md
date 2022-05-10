@@ -1,6 +1,10 @@
 
 ## Release Notes
 
+**v0.4.3 - May 10, 2022**
+
+* **FIXED** - fixing docs
+
 **v0.4.2 - December 11, 2020**
 
 * **FIXED** - doc dependencies
