@@ -1,7 +1,7 @@
 
 ## Release Notes
 
-**v0.4.4 - June 15, 2022**
+**v0.4.5 - June 15, 2022**
 
 * **FIXED** - removing tests from release
 
