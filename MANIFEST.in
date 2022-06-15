@@ -12,3 +12,4 @@ recursive-exclude */tests *
 recursive-exclude */*/tests *
 recursive-exclude */*/*/tests *
 recursive-exclude tests
+prune tests*
