@@ -26,7 +26,7 @@ install_requires = [
 # READ THE DOCS SERVERS
 exists = os.path.exists("/home/docs/")
 if exists:
-    install_requires = ['fundamentals']
+    install_requires = ['fundamentals', 'pyramid']
 
 setup(name="dryxPyramid",
       version=__version__,
