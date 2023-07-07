@@ -14,7 +14,7 @@ install_requires = [
     'pyyaml',
     'fundamentals',
     'pyramid',
-    'sqlalchemy',
+    'sqlalchemy==1.4.48',
     'passlib',
     'paste',
     'fundamentals',
@@ -26,13 +26,7 @@ install_requires = [
 # READ THE DOCS SERVERS
 exists = os.path.exists("/home/docs/")
 if exists:
-    c_exclude_list = ['healpy', 'astropy',
-                      'numpy', 'sherlock', 'wcsaxes', 'HMpTy', 'ligo-gracedb', 'mod_wsgi']
-    for e in c_exclude_list:
-        try:
-            install_requires.remove(e)
-        except:
-            pass
+    install_requires = ['fundamentals']
 
 setup(name="dryxPyramid",
       version=__version__,
