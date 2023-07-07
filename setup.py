@@ -17,16 +17,13 @@ install_requires = [
     'sqlalchemy==1.4.48',
     'passlib',
     'paste',
-    'fundamentals',
-    'pymysql',
-    'khufu',
-    'numpy'
+    'khufu'
 ]
 
 # READ THE DOCS SERVERS
 exists = os.path.exists("/home/docs/")
 if exists:
-    install_requires = ['fundamentals', 'setuptools==62.4.0', 'pyramid']
+    install_requires = ['fundamentals', 'pyramid']
 
 setup(name="dryxPyramid",
       version=__version__,

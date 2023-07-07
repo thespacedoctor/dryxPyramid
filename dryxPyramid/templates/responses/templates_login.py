@@ -9,7 +9,7 @@
 from builtins import object
 import sys
 import os
-import khufu
+
 
 class templates_login(object):
     """
@@ -70,7 +70,7 @@ class templates_login(object):
         - ``loginPage`` -- the login page
         """
         self.log.debug('starting the ``get`` method')
-
+        import khufu
         loginPage = khufu.scaffolding.login_page(
             log=self.log,
             mainCssFilePath=self.mainCssFilePath,

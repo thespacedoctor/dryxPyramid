@@ -5,13 +5,6 @@ import os
 import shutil
 import unittest
 import yaml
-from pyramid import testing
-from pyramid.path import AssetResolver
-from pyramid.request import apply_request_extensions
-from paste.deploy.loadwsgi import appconfig
-import pymysql as ms
-from sqlalchemy import engine_from_config
-from sqlalchemy.orm import sessionmaker
 from fundamentals import utKit
 
 # OVERRIDES
@@ -131,12 +124,15 @@ def db(request):
 
 class BaseTest(unittest.TestCase):
 
+    from pyramid import testing
+
     def __init__(self, *args, **kwargs):
         unittest.TestCase.__init__(self, *args, **kwargs)
 
     def setUp(self):
         '''This is the default setup method for pyramid unit tests. It will instantiate a database connection to the unit_tesing database on localhost
         '''
+        from paste.deploy.loadwsgi import appconfig
         moduleDirectory = os.path.dirname(__file__)
         app_settings = appconfig(
             'config:' + self.testIni)
@@ -148,4 +144,5 @@ class BaseTest(unittest.TestCase):
             '/login', params={'login': self.settings["test user"], 'password': self.settings["test pass"]})
 
     def tearDown(self):
+
         testing.tearDown()
