@@ -13,8 +13,6 @@ formats: all
 python:
   version: 3.8
   install:
-    - method: setuptools
-      path: .
     - requirements: docs/requirements.txt
 
 submodules:
